@@ -118,6 +118,10 @@ h1, h2, h3, h4 {
 }
 
 .navbar {
+  &--blog {
+    background-color: #FFFFFF;
+  }
+
   margin-bottom: 0!important;
 
   &__container {
