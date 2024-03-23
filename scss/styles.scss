@@ -178,6 +178,7 @@ h1, h2, h3, h4 {
         }
 
         &__name {
+          font-weight: 600;
           display: none;
 
           @include media-breakpoint-up(xxl) {
