@@ -1,3 +1,7 @@
+:root {
+  --hoverColor: #000;
+}
+
 a {
   text-decoration: none;
   border-bottom-style: solid;
