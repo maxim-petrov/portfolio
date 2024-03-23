@@ -177,6 +177,13 @@ h1, h2, h3, h4 {
           padding-left: 0.35rem;
         }
 
+        &:focus,
+        &:hover {
+          svg {
+            fill: #000;
+          }
+        }
+
         &--icon {
           position: relative;
           top: -3px;
