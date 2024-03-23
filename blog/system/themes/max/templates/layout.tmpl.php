@@ -44,7 +44,7 @@
       </div>
     </nav>
 </header>
-<main>
+<main class="container">
 <div style="float: right">
 <?php _T ('author-menu') ?>
 </div>
@@ -79,14 +79,15 @@
 <?php _T ('popular') ?>
 <?php _T ('unsubscribe') ?>
 <?php _T ('form') ?>
-
+</main>
+<footer class="container">
 © <span id="e2-blog-author"><?= @$content['blog']['author'] ?></span>, <?=$content['blog']['years-range']?>
 
 <a class="e2-rss-button" href="<?=@$content['blog']['rss-href']?>"><?= _S ('gs--rss') ?></a>
-
+</footer>
 <?= $content['engine']['about'] # please do not remove ?>
 <?php _T_DEFER ('stat') ?>
 <?php _T ('login-element'); ?>
 
 <?php _T ('niceerror'); ?>
-</main>
+
