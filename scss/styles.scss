@@ -134,6 +134,8 @@ h1, h2, h3, h4 {
     }
 
     .navbar__photo {
+      margin-right: 8px;
+
       img {
         width: 40px;
         height: 40px;
@@ -167,19 +169,39 @@ h1, h2, h3, h4 {
         padding-bottom: 0;
         list-style-type: none;
         margin-bottom: -1px;
+      }
 
-        .nav-link {
-          &__name {
-            display: none;
+      .nav-link {
+        @include media-breakpoint-only(md) {
+          padding-right: 0.35rem;
+          padding-left: 0.35rem;
+        }
 
-            @include media-breakpoint-up(xxl) {
-              display: block;
+        &__name {
+          display: none;
+
+          @include media-breakpoint-up(xxl) {
+            display: block;
+          }
+        }
+
+        &:hover,
+        &:focus {
+          color: #000;
+
+          .nav-link__email-full {
+            color: #000;
+          }
+
+          .nav-link__icon {
+            svg {
+              fill: #000;
             }
           }
+        }
 
-          &.active {
-            font-weight: 600;
-          }
+        &.active {
+          font-weight: 600;
         }
       }
 

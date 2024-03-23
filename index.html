@@ -20,9 +20,9 @@
   <header>
     <nav class="navbar navbar-expand-md sticky-top navbar-primary bg-primary mb-4">
       <div class="container-fluid navbar__container">
-        <span class="navbar__photo navbar-brand" style="border-bottom: none">
+        <a class="navbar__photo navbar-brand" style="border-bottom: none">
           <img class="userpic emerge" src="/images/1x/userpic.png" srcset="/images/1x/userpic.png 1x, /images/2x/userpic@2x.png 2x" data-effect="zoom" alt="Максим Петров" style="transform: scale(0.5); transform-origin: 50% 50%; transition: opacity 500ms ease-out 0s; opacity: 1;; transform: scale(1); transition: opacity 500ms ease-out, transform 500ms cubic-bezier(0, 0.75, 0.25, 1); -webkit-transform: scale(1); -webkit-transition: opacity 500ms ease-out, -webkit-transform 500ms cubic-bezier(0, 0.75, 0.25, 1); ">
-        </span>
+        </a>
         <span class="navbar__name-mobile">Максим Петров</span>
         <button class="navbar__toggler navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -30,7 +30,7 @@
         <div class="navbar__menu collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li>
-              <a class="nav-link nav-link__name active" href="/advice/">Максим Петров</a>
+              <a class="nav-link nav-link__name active">Максим Петров</a>
             </li>
             <li>
               <a class="nav-link" href="#interfaces">Интерфейсы</a>
@@ -42,7 +42,10 @@
               <a class="nav-link" href="#accessibility">Доступность</a>
             </li>
             <li>
-              <a class="nav-link" href="#code">Фронтенд</a>
+              <a class="nav-link" href="#frontend">Фронтенд</a>
+            </li>
+            <li>
+              <a class="nav-link" href="#ai">ИИ</a>
             </li>
             <li>
               <a class="nav-link" href="#works">Избранные работы</a>
@@ -147,6 +150,41 @@
           </div>
           <div class="row">
             <div class="skills__text col-12 col-sm-10 col-md-8 col-lg-7">
+              <p class="skills_text">За время своей карьеры я накопил богатый опыт в разработке и внедрении
+                дизайн-систем различных масштабов. Мой опыт включает в себя интеграцию переменных в код, использование
+                компонентов в Storybook и управление обширной библиотекой компонентов в Figma с помощью токенов и
+                переменных. Я отлично справляюсь с созданием и развитием дизайн-систем, гарантируя, что каждый сценарий
+                и состояние компонента будут отражены в Figma. Благодаря такому вниманию к деталям разработчикам удобно
+                ориентироваться на макет, так как он однозначен и помогает избежать путаницы.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="skills__text skills__text--fluid col-12 col-sm-10 col-md-6 col-lg-5">
+              <p class="skills_text">Мои технические навыки включают внедрение и управление дизайн-токенами в
+                компонентах. Знаю, как структурировать дизайн-токены в формате JSON и активно использую плагин Tokens
+                Studio for Figma. Умею работать с переменными.</p>
+              <p class="skills_text">С 2022 года занимаюсь развитием дизайн-системы для библиотеки компонентов Blazor.
+                Учитывая, что компоненты являются конечным продуктом, очень важно тщательно исследовать все сценарии и
+                варианты использования каждого компонента на этапе дизайна. Этот процесс включает ресёрч конкурентов,
+                выявление всех потенциальных крайних случаев и проработку навигации клавиатурной навигации, чтобы
+                обеспечить полное покрытие и удобство использования. Такой подход позволяет сделать законченное решение,
+                которые которое не разочарует пользователей.</p>
+            </div>
+            <div class="skills__image col-12 col-md-6 col-lg-7">
+              <img src="/images/1x/design-systems-collage.png" srcset="/images/1x/design-systems-collage.png 1x, /images/2x/design-systems-collage@2x.png 2x" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="skills__item skills__item--frontend">
+        <div class="skills__container container mb-4">
+          <div class="row">
+            <div class="skills__text col-12">
+              <h2 class="skills__heading" id="frontend">Фронтенд</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="skills__text col-12 col-sm-10 col-md-8 col-lg-7">
               <p class="skills_text">Доступность — важный момент в моей работе по дизайну. Это нужно, чтобы сайты были
                 удобными для всех, в том числе для людей с ограниченными возможностями. Это включает в себя выбор цветов,
                 которые хорошо воспринимаются всеми, создание удобной навигации через клавиатуру и внимание к мелочам,
@@ -174,11 +212,11 @@
           </div>
         </div>
       </section>
-      <section class="skills__item skills__item--code">
+      <section class="skills__item skills__item--ai">
         <div class="skills__container container mb-4">
           <div class="row">
             <div class="skills__text col-12">
-              <h2 class="skills__heading" id="code">Фронтенд</h2>
+              <h2 class="skills__heading" id="ai">ИИ</h2>
             </div>
           </div>
           <div class="row">
