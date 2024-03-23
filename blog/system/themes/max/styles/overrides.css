@@ -1,7 +1,25 @@
+a {
+  text-decoration: none;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  transition-timing-function: ease-out;
+  transition-duration: var(--time);
+  transition-property: border-bottom, border-color, background, color, fill;
+}
+
 body {
   border-top: #ffbc26 5px solid;
 }
 
+.header-menu {
+  padding-bottom: 20px;
+}
+
 .band-item-inner {
   text-decoration: none;
+}
+
+.e2-note h1 {
+  font-size: 46px;
+  line-height: 1.3;
 }
