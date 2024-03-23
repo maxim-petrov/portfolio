@@ -1,0 +1,14 @@
+P 0.002      Panic: syntax error, unexpected ''ru'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+
+ParseError in system/themes/max/theme-info.php:7
+
+┌─
+│            1. index.php:1 e2 ()
+│            2. system/core.php:2 e2m_settings (
+│              array (
+│              )
+│            )
+│            3. system/core.php:2 uf ()
+└─
+P 0.00205    :-(
+P 0.00208    Eat "system/theme/templates/panic.tmpl.php"

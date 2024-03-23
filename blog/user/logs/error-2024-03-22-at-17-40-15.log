@@ -1,0 +1,28 @@
+H 0.05353    Panic: syntax error, unexpected ':', expecting ')'
+
+ParseError in system/themes/max/theme-info.php:2
+
+┌─
+│            1. index.php:1 e2 ()
+│            2. system/core.php:2 e2m_settings (
+│              array (
+│              )
+│            )
+│            3. system/core.php:2 uf ()
+└─
+H 0.05365    :-(
+H 0.0537     Eat "system/theme/templates/panic.tmpl.php"
+L 0.05298    Panic: syntax error, unexpected ':', expecting ')'
+
+ParseError in system/themes/max/theme-info.php:2
+
+┌─
+│            1. index.php:1 e2 ()
+│            2. system/core.php:2 e2m_settings (
+│              array (
+│              )
+│            )
+│            3. system/core.php:2 uf ()
+└─
+L 0.05305    :-(
+L 0.0531     Eat "system/theme/templates/panic.tmpl.php"

@@ -1,0 +1,14 @@
+B 0.05071    Panic: syntax error, unexpected ':', expecting ')'
+
+ParseError in system/themes/max/theme-info.php:2
+
+┌─
+│            1. index.php:1 e2 ()
+│            2. system/core.php:2 e2m_settings (
+│              array (
+│              )
+│            )
+│            3. system/core.php:2 uf ()
+└─
+B 0.05071    :-(
+B 0.05071    Eat "system/theme/templates/panic.tmpl.php"

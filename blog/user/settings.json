@@ -1,0 +1,46 @@
+{
+    "appearance": {
+        "notes_per_page": 10,
+        "respond_to_dark_mode": false,
+        "show_view_counts": false,
+        "show_main_menu": true,
+        "show_sharing_buttons": false
+    },
+    "comments": {
+        "default_on": false,
+        "require_gip": false,
+        "fresh_only": false
+    },
+    "template": "max",
+    "db": {
+        "server": "localhost",
+        "user_name": "045463090_blog",
+        "passw": "q4bFenvAlLazlmTNY9ZznnpnhIyM1q50TJtHPnZ04A==",
+        "name": "articus_blog"
+    },
+    "language": "ru",
+    "blog_title": "Максим Петров",
+    "author": "",
+    "author_email": "mail@maximpetrov.ru",
+    "notifications": {
+        "new_comments": false
+    },
+    "menu_items": {
+        "favourites_on": true,
+        "most_commented_on": false,
+        "popular_on": false,
+        "tags_on": true,
+        "calendar_on": false,
+        "random_on": false
+    },
+    "embed": {
+        "google-analytics": "",
+        "yandex-metrika": ""
+    },
+    "timezone": {
+        "offset": 14400,
+        "is_dst": false
+    },
+    "blog_subtitle": "UI\/UX-дизайнер.",
+    "meta_description": ""
+}

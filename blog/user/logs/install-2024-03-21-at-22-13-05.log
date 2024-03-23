@@ -1,0 +1,115 @@
+M 0.00288    Installer: force directories
+M 0.00298    Installer: write password hash
+M 0.00316    Ensure: Establishing connection "045463090_blog@localhost"
+M 0.0035     Ensure: Running on "MariaDB", version "10.5.21"
+M 0.00354    Ensure: Selecting database "articus_blog"
+M 0.00359    DB [1]: SET NAMES utf8mb4
+M 0.00362    DB [?]: SHOW TABLES FROM `articus_blog`
+M 0.00367    Installer: create tables
+M 0.0037     DB [2]: SHOW TABLES LIKE 'e2BlogActions'
+M 0.00375    DB [3]: CREATE TABLE `e2BlogActions` (`ID` INT UNSIGNED AUTO_INCREMENT PRIMARY KEY, `SubsetID` INT UNSIGNED DEFAULT '1' NOT NULL, `EntityID` INT UNSIGNED DEFAULT '0' NOT NULL, `Stamp` INT UNSIGNED DEFAULT '0' NOT NULL, `ReadCount` INT DEFAULT '0' NOT NULL, UNIQUE INDEX `EntityIDStamp` (`EntityID`, `Stamp`), INDEX `SubsetID` (`SubsetID`)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+M 0.00389    DB [4]: SHOW TABLES LIKE 'e2BlogAliases'
+M 0.00398    DB [5]: CREATE TABLE `e2BlogAliases` (`ID` INT UNSIGNED AUTO_INCREMENT PRIMARY KEY, `SubsetID` INT UNSIGNED DEFAULT '1' NOT NULL, `EntityType` VARCHAR(1) DEFAULT '' NOT NULL, `EntityID` INT UNSIGNED DEFAULT '0' NOT NULL, `Alias` VARCHAR(64) DEFAULT '' NOT NULL, `Stamp` INT UNSIGNED DEFAULT '0' NOT NULL, INDEX `SubsetID` (`SubsetID`), INDEX `Alias` (`Alias`), INDEX `EntityID` (`EntityID`)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+M 0.00409    DB [6]: SHOW TABLES LIKE 'e2BlogComments'
+M 0.00416    DB [7]: CREATE TABLE `e2BlogComments` (`ID` INT UNSIGNED AUTO_INCREMENT PRIMARY KEY, `SubsetID` INT UNSIGNED DEFAULT '1' NOT NULL, `NoteID` INT UNSIGNED DEFAULT '0' NOT NULL, `AuthorName` VARCHAR(255) DEFAULT '' NOT NULL, `AuthorEmail` VARCHAR(255) DEFAULT '' NOT NULL, `Text` MEDIUMTEXT, `Reply` MEDIUMTEXT, `IsVisible` TINYINT(1) DEFAULT '1' NOT NULL, `IsFavourite` TINYINT(1) DEFAULT '0' NOT NULL, `IsReplyVisible` TINYINT(1) DEFAULT '0' NOT NULL, `IsReplyFavourite` TINYINT(1) DEFAULT '0' NOT NULL, `IsAnswerAware` TINYINT(1) DEFAULT '1' NOT NULL, `IsSubscriber` TINYINT(1) DEFAULT '0' NOT NULL, `IsSpamSuspect` TINYINT(1) DEFAULT '0' NOT NULL, `IsNew` TINYINT(1) DEFAULT '0' NOT NULL, `Stamp` INT UNSIGNED DEFAULT '0' NOT NULL, `LastModified` INT UNSIGNED DEFAULT '0' NOT NULL, `ReplyStamp` INT UNSIGNED DEFAULT '0' NOT NULL, `ReplyLastModified` INT UNSIGNED DEFAULT '0' NOT NULL, `IP` VARCHAR(39) DEFAULT '' NOT NULL, `IsGIPUsed` TINYINT(1) DEFAULT '0' NOT NULL, `GIP` VARCHAR(15) DEFAULT '' NOT NULL, `GIPAuthorID` VARCHAR(64) DEFAULT '' NOT NULL, INDEX `SubsetID` (`SubsetID`), INDEX `NoteID` (`NoteID`)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+M 0.00416    DB [8]: SHOW TABLES LIKE 'e2BlogGIPsSessions'
+M 0.00416    DB [9]: CREATE TABLE `e2BlogGIPsSessions` (`ID` INT UNSIGNED AUTO_INCREMENT PRIMARY KEY, `SubsetID` INT UNSIGNED DEFAULT '1' NOT NULL, `GIP` VARCHAR(15) DEFAULT '' NOT NULL, `GIPAuthorID` VARCHAR(64) DEFAULT '' NOT NULL, `AuthorName` VARCHAR(255) DEFAULT '' NOT NULL, `AuthorEmail` VARCHAR(255) DEFAULT '' NOT NULL, `AuthorProfileLink` VARCHAR(255) DEFAULT '' NOT NULL, `SessionToken` VARCHAR(255) DEFAULT '' NOT NULL, `Stamp` INT UNSIGNED DEFAULT '0' NOT NULL, UNIQUE INDEX `SubsetIDGIPGIPAuthorID` (`SubsetID`, `GIP`, `GIPAuthorID`), INDEX `SubsetID` (`SubsetID`)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+M 0.00416    DB [10]: SHOW TABLES LIKE 'e2BlogKeywords'
+M 0.00416    DB [11]: CREATE TABLE `e2BlogKeywords` (`ID` INT UNSIGNED AUTO_INCREMENT PRIMARY KEY, `SubsetID` INT UNSIGNED DEFAULT '1' NOT NULL, `Keyword` VARCHAR(255) DEFAULT '' NOT NULL, `OriginalAlias` VARCHAR(64) DEFAULT '' NOT NULL, `PageTitle` VARCHAR(255) DEFAULT '' NOT NULL, `Description` MEDIUMTEXT, `Summary` MEDIUMTEXT, `Uploads` MEDIUMTEXT, `IsVisible` TINYINT(1) DEFAULT '1' NOT NULL, `IsFavourite` TINYINT(1) DEFAULT '0' NOT NULL, INDEX `SubsetID` (`SubsetID`)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+M 0.0043     DB [12]: SHOW TABLES LIKE 'e2BlogNotes'
+M 0.00442    DB [13]: CREATE TABLE `e2BlogNotes` (`ID` INT UNSIGNED AUTO_INCREMENT PRIMARY KEY, `SubsetID` INT UNSIGNED DEFAULT '1' NOT NULL, `Title` VARCHAR(255) DEFAULT '' NOT NULL, `Text` MEDIUMTEXT, `Summary` MEDIUMTEXT, `FormatterID` VARCHAR(32) DEFAULT 'neasden' NOT NULL, `OriginalAlias` VARCHAR(64) DEFAULT '' NOT NULL, `Uploads` MEDIUMTEXT, `IsPublished` TINYINT(1) DEFAULT '0' NOT NULL, `IsCommentable` TINYINT(1) DEFAULT '0' NOT NULL, `IsVisible` TINYINT(1) DEFAULT '1' NOT NULL, `IsFavourite` TINYINT(1) DEFAULT '0' NOT NULL, `Stamp` INT UNSIGNED DEFAULT '0' NOT NULL, `LastModified` INT UNSIGNED DEFAULT '0' NOT NULL, `Offset` INT DEFAULT '0' NOT NULL, `IsDST` TINYINT(1) DEFAULT '0' NOT NULL, `IsIndexed` TINYINT(1) DEFAULT '0' NOT NULL, `IsExternal` TINYINT(1) DEFAULT '0' NOT NULL, `ReadCount` INT UNSIGNED DEFAULT '0' NOT NULL, `SourceID` INT UNSIGNED DEFAULT '0' NOT NULL, `SourceNoteID` INT UNSIGNED DEFAULT '0' NOT NULL, `SourceNoteURL` VARCHAR(255) DEFAULT '' NOT NULL, `SourceNoteJSONURL` VARCHAR(255) DEFAULT '' NOT NULL, `SourceNoteData` MEDIUMTEXT, FULLTEXT `TitleText` (`Title`, `Text`), INDEX `SubsetID` (`SubsetID`), INDEX `Stamp` (`Stamp`), INDEX `SourceID` (`SourceID`), INDEX `SourceNoteID` (`SourceNoteID`)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+M 0.00442    DB [14]: SHOW TABLES LIKE 'e2BlogNotesKeywords'
+M 0.00442    DB [15]: CREATE TABLE `e2BlogNotesKeywords` (`ID` INT UNSIGNED AUTO_INCREMENT PRIMARY KEY, `SubsetID` INT UNSIGNED DEFAULT '1' NOT NULL, `NoteID` INT UNSIGNED DEFAULT '0' NOT NULL, `KeywordID` INT UNSIGNED DEFAULT '0' NOT NULL, INDEX `SubsetID` (`SubsetID`), INDEX `NoteID` (`NoteID`)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+M 0.00442    DB [16]: SHOW TABLES LIKE 'e2BlogSources'
+M 0.00442    DB [17]: CREATE TABLE `e2BlogSources` (`ID` INT UNSIGNED AUTO_INCREMENT PRIMARY KEY, `SubsetID` INT UNSIGNED DEFAULT '1' NOT NULL, `TrueID` INT UNSIGNED DEFAULT '0' NOT NULL, `Title` VARCHAR(255) DEFAULT '' NOT NULL, `AuthorName` VARCHAR(255) DEFAULT '' NOT NULL, `URL` VARCHAR(255) DEFAULT '' NOT NULL, `PictureURL` VARCHAR(255) DEFAULT '' NOT NULL, `IsWhiteListed` TINYINT(1) DEFAULT '0' NOT NULL, `IsTrusted` TINYINT(1) DEFAULT '0' NOT NULL, INDEX `SubsetID` (`SubsetID`)) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4
+M 0.00446    Installer: write settings
+M 0.00459    Installer: search index
+M 0.00462    No database configuration found in Environment
+M 0.00465    No database configuration found in Config
+M 0.00467    Database configuration found in Settings
+M 0.00826    Caches: Drop all kinds of caches
+M 0.00848    Backup to user/backup/
+M 0.00856    Backup: wrote header
+M 0.00859    Backup: table e2BlogActions, subset 1
+M 0.00867    Backup: wrote table definition with result 1
+M 0.00872    Backup: chunk size 50000
+M 0.00876    Backup: wrote table data with result 1
+M 0.00878    Backup: table e2BlogAliases, subset 1
+M 0.00884    Backup: wrote table definition with result 1
+M 0.0089     Backup: chunk size 20000
+M 0.00894    Backup: wrote table data with result 1
+M 0.00896    Backup: table e2BlogComments, subset 1
+M 0.00906    Backup: wrote table definition with result 1
+M 0.00915    Backup: chunk size 5000
+M 0.00922    Backup: wrote table data with result 1
+M 0.00927    Backup: table e2BlogGIPsSessions, subset 1
+M 0.00935    Backup: wrote table definition with result 1
+M 0.00943    Backup: chunk size 5000
+M 0.0095     Backup: wrote table data with result 1
+M 0.00955    Backup: table e2BlogKeywords, subset 1
+M 0.00963    Backup: wrote table definition with result 1
+M 0.00971    Backup: chunk size 5000
+M 0.00979    Backup: wrote table data with result 1
+M 0.00983    Backup: table e2BlogNotes, subset 1
+M 0.00992    Backup: wrote table definition with result 1
+M 0.01001    Backup: chunk size 5000
+M 0.01007    Backup: wrote table data with result 1
+M 0.01012    Backup: table e2BlogNotesKeywords, subset 1
+M 0.0102     Backup: wrote table definition with result 1
+M 0.01027    Backup: chunk size 5000
+M 0.01031    Backup: wrote table data with result 1
+M 0.01034    Backup: table e2BlogSources, subset 1
+M 0.01039    Backup: wrote table definition with result 1
+M 0.01044    Backup: chunk size 5000
+M 0.01048    Backup: wrote table data with result 1
+M 0.01051    Backup: wrote data with running == 1
+M 0.01068    No need to sift
+M 0.01077    Installer: instantiate
+M 0.01095    Installer: complete
+M 0.01102    Running on Apache
+M 0.0111     There is an .htaccess file in the installation directory
+M 0.0113     Spawn: Curl https://maximpetrov.ru/blog/settings/underhood/index/ using get...
+M 0.01386    Spawn: Curl returns: [Array
+(
+    [url] => https://maximpetrov.ru/blog/settings/underhood/index/
+    [content_type] => text/html; charset=UTF-8
+    [http_code] => 200
+    [header_size] => 166
+    [request_size] => 193
+    [filetime] => -1
+    [ssl_verify_result] => 20
+    [redirect_count] => 0
+    [total_time] => 0.013667
+    [namelookup_time] => 0.00078
+    [connect_time] => 0.000911
+    [pretransfer_time] => 0.005052
+    [size_upload] => 0
+    [size_download] => 91
+    [speed_download] => 6658
+    [speed_upload] => 0
+    [download_content_length] => -1
+    [upload_content_length] => 0
+    [starttransfer_time] => 0.005131
+    [redirect_time] => 0
+    [redirect_url] => 
+    [primary_ip] => 195.161.41.242
+    [certinfo] => Array
+        (
+        )
+
+    [primary_port] => 443
+    [local_ip] => 195.161.41.242
+    [local_port] => 51894
+    [http_version] => 3
+    [protocol] => 2
+    [ssl_verifyresult] => 0
+    [scheme] => HTTPS
+    [appconnect_time_us] => 5810
+    [connect_time_us] => 911
+    [namelookup_time_us] => 780
+    [pretransfer_time_us] => 5052
+    [redirect_time_us] => 0
+    [starttransfer_time_us] => 5131
+    [total_time_us] => 13667
+)
+] [<pre>No old lock<br />New lock is 1711059186<br /><br />Indexing complete<br /><br /></pre>], (errno=0, errstr=)...

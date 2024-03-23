@@ -1,0 +1,10 @@
+Y 0.05902    Panic: syntax error, unexpected ''colors'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+
+ParseError in system/themes/plain/theme-info.php:14
+
+┌─
+│            1. index.php:1 e2 ()
+│            2. system/core.php:2 lf ()
+└─
+Y 0.05902    :-(
+Y 0.05902    Theme "plain" found in "system/themes/plain/"
