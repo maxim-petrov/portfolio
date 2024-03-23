@@ -464,6 +464,12 @@ h1, h2, h3, h4 {
     }
 
     .works__image {
+      a {
+        &:hover + .works__caption a {
+          color: #000;
+        }
+      }
+
       &--docs {
         .image_link {
           background-color: #1B6AB3 !important;
