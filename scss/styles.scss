@@ -182,6 +182,7 @@ h1, h2, h3, h4 {
           top: -3px;
 
           svg {
+            stroke: none !important;
             transition: fill .15s ease-in-out;
             fill: var(--bs-nav-link-color);
           }
