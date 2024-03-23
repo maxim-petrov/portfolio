@@ -59,7 +59,7 @@
 
 
 <?php if ($content['class'] == 'frontpage') { ?>
-<div id="e2-blog-description"><?= $content['blog']['subtitle'] ?></div>
+<div class="visually-hidden" id="e2-blog-description"><?= $content['blog']['subtitle'] ?></div>
 <?php } ?>
 
 <?php _T ('main-menu') ?>
