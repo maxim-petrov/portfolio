@@ -43,6 +43,10 @@ body {
   color: rgba(0, 0, 0, 1) !important;
 }
 
+.band-item.band-item-current .band-item-inner:after {
+  background-color: #000;
+}
+
 .e2-note h1 {
   font-size: 46px;
   line-height: 1.3;
