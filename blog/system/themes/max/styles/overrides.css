@@ -1,3 +1,7 @@
+body {
+  border-top: #ffbc26 5px solid;
+}
+
 .band-item-inner {
   text-decoration: none;
 }
