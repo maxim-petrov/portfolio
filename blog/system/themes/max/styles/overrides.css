@@ -1,6 +1,7 @@
 :root {
   --hoverColor: #000;
   --hoverUnderlineColor: #000;
+  --activeColor: #000;
 }
 
 a {
@@ -25,6 +26,7 @@ body {
 }
 
 .band-item-inner {
+  font-weight: 400;
   color: rgba(0, 0, 0, .65) !important;
   text-decoration: none;
 }
