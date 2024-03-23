@@ -5,7 +5,7 @@
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
   border-bottom-style: solid;
   border-bottom-width: 1px;
   transition-timing-function: ease-out;
@@ -46,4 +46,8 @@ body {
 
 .e2-note h1 a {
   text-decoration: none;
+}
+
+.e2-note-snippet h1 a {
+  text-decoration: none !important;
 }
