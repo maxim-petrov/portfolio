@@ -16,6 +16,10 @@ body {
   border-top: #ffbc26 5px solid;
 }
 
+.nav-link__icon svg {
+  stroke: none;
+}
+
 .header-menu {
   padding-bottom: 20px;
 }
