@@ -49,15 +49,13 @@
 <?php _T ('author-menu') ?>
 </div>
 
-<div><?php _T ('user-picture') ?></div>
-
 <div style="float: right">
 <?php if ($content['class'] != 'found') { ?>
   <?php _T ('search-icon') ?>
 <?php } ?>
 </div>
 
-<h1><?= _A ('<a href="'. $content['blog']['href']. '"><span id="e2-blog-title">'. $content['blog']['title']. '</span></a>') ?></h1>
+<h1><?= _A ('<a class="visually-hidden" href="'. $content['blog']['href']. '"><span id="e2-blog-title">'. $content['blog']['title']. '</span></a>') ?></h1>
 
 
 <?php if ($content['class'] == 'frontpage') { ?>
