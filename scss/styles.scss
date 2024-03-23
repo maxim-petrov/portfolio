@@ -455,6 +455,14 @@ h1, h2, h3, h4 {
       max-width: 1320px;
     }
 
+    a {
+      color: var(--bs-body-color);
+
+      &:hover {
+        color: #000;
+      }
+    }
+
     .works__image {
       &--docs {
         .image_link {
