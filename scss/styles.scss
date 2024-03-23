@@ -177,6 +177,16 @@ h1, h2, h3, h4 {
           padding-left: 0.35rem;
         }
 
+        &--icon {
+          position: relative;
+          top: -3px;
+
+          svg {
+            transition: fill .15s ease-in-out;
+            fill: var(--bs-nav-link-color);
+          }
+        }
+
         &__name {
           font-weight: 600;
           display: none;
@@ -190,6 +200,12 @@ h1, h2, h3, h4 {
         &:focus {
           color: #000;
 
+          .nav-link--icon {
+            svg {
+              fill: #000;
+            }
+          }
+
           .nav-link__email-full {
             color: #000;
           }
@@ -199,10 +215,6 @@ h1, h2, h3, h4 {
               fill: #000;
             }
           }
-        }
-
-        &.active {
-          font-weight: 600;
         }
       }
 

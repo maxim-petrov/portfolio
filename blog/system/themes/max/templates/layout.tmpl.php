@@ -26,6 +26,11 @@
               <a class="nav-link" href="/#code">Фронтенд</a>
             </li>
             <li>
+              <span class="nav-link--icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.7875 11.715L3.575 18.53L9.375 14.315L15.175 18.53L12.9625 11.715L18.75 7.5025H11.5875L9.375 0.6875L7.1625 7.5025H0L5.7875 11.715Z"/>
+                  </svg>
+              </span>
               <a class="nav-link active" href="/#works">Избранные работы</a>
             </li>
           </ul>
