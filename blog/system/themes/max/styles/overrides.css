@@ -16,7 +16,7 @@ body {
 }
 
 .band-item-inner {
-  color: #0060a0;
+  color: #0060a0 !important;
   text-decoration: none;
 }
 
