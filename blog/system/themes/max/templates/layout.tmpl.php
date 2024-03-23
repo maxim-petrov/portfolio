@@ -26,6 +26,9 @@
               <a class="nav-link" href="/#code">Фронтенд</a>
             </li>
             <li>
+              <a class="nav-link" href="/#ai">ИИ</a>
+            </li>
+            <li>
                 <a class="nav-link active">
                     <span class="nav-link--icon">
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
