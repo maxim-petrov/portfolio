@@ -74,14 +74,6 @@
     ?>
 
     </nav>
-    
-    <?php if (@$content['blog']['show-follow-button?']) { ?>
-    <div class="band-right-section">
-      <a class="band-follow-button e2-follow-button" href="<?= @$content['blog']['rss-href'] ?>">
-        <span><?= _S ('gs--follow-this-blog') ?></span>
-      </a>
-    </div>
-    <?php } ?>
 
   </div>
 </div>
