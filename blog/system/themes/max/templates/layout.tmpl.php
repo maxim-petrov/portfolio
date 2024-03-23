@@ -29,13 +29,15 @@
               <a class="nav-link" href="/#ai">ИИ</a>
             </li>
             <li>
-                <a class="nav-link active">
-                    <span class="nav-link--icon">
-                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5.7875 11.715L3.575 18.53L9.375 14.315L15.175 18.53L12.9625 11.715L18.75 7.5025H11.5875L9.375 0.6875L7.1625 7.5025H0L5.7875 11.715Z"/>
-                        </svg>
-                    </span>Избранные работы</a>
-            </li>
+                  <a class="nav-link active" href="#works"><span class="nav-link--icon">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.7875 11.715L3.575 18.53L9.375 14.315L15.175 18.53L12.9625 11.715L18.75 7.5025H11.5875L9.375 0.6875L7.1625 7.5025H0L5.7875 11.715Z"/>
+                  </svg>
+              </span>
+                      <span class="nav-link--large">Избранные работы</span>
+                      <span class="nav-link--small">Работы</span>
+                  </a>
+              </li>
           </ul>
           <div class="navbar__email navbar-email">
           <a class="nav-link" href="mailto:mail@maximpetrov.ru">
