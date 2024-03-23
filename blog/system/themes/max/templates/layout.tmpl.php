@@ -11,22 +11,22 @@
         <div class="navbar__menu collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li>
-              <a class="nav-link nav-link__name active" href="/advice/">Максим Петров</a>
+              <a class="nav-link nav-link__name" href="/">Максим Петров</a>
             </li>
             <li>
-              <a class="nav-link" href="#interfaces">Интерфейсы</a>
+              <a class="nav-link" href="/#interfaces">Интерфейсы</a>
             </li>
             <li>
-              <a class="nav-link" href="#design-systems">Дизайн-системы</a>
+              <a class="nav-link" href="/#design-systems">Дизайн-системы</a>
             </li>
             <li>
-              <a class="nav-link" href="#accessibility">Доступность</a>
+              <a class="nav-link" href="/#accessibility">Доступность</a>
             </li>
             <li>
-              <a class="nav-link" href="#code">Фронтенд</a>
+              <a class="nav-link" href="/#code">Фронтенд</a>
             </li>
             <li>
-              <a class="nav-link" href="#works">Избранные работы</a>
+              <a class="nav-link active" href="/#works">Избранные работы</a>
             </li>
           </ul>
           <div class="navbar__email navbar-email">
