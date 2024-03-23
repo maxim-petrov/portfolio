@@ -27,7 +27,7 @@ body {
 
 .band-item-inner {
   font-weight: 400 !important;
-  color: rgba(0, 0, 0, .65);
+  color: rgba(0, 0, 0, .65) !important;
   text-decoration: none;
 }
 
