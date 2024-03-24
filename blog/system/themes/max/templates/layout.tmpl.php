@@ -55,7 +55,7 @@
     </nav>
 </header>
 
-<main class="container">
+<main class="container-xxl">
 <div style="float: right">
 <?php _T ('author-menu') ?>
 </div>
