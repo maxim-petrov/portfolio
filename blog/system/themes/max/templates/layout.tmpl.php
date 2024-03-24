@@ -54,6 +54,8 @@
       </div>
     </nav>
 </header>
+<?php _JS ('bootstrap') ?>
+
 <main class="container">
 <div style="float: right">
 <?php _T ('author-menu') ?>
