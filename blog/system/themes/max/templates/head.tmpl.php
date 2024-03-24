@@ -49,3 +49,4 @@
 
 <?php _X ('head-extras') ?>
 
+<script type="module" src="/js/main.js"></script>
