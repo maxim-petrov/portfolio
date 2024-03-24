@@ -40,8 +40,6 @@
 <?php _CSS ('main') ?>
 <?php _JS ('main') ?>
 
-<?php _JS ('bootstrap.bundle.min') ?>
-
 <?php if ($content['sign-in']['done?']) { ?>
 <?php _CSS ('admin') ?>
 <?php _JS ('admin') ?>
