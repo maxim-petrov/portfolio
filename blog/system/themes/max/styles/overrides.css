@@ -19,6 +19,7 @@ body {
 
 .e2-text p {
   max-width: 840px;
+  color: #000;
 }
 
 .nav-link__icon svg {
