@@ -17,6 +17,10 @@ body {
   border-top: #ffbc26 5px solid;
 }
 
+.e2-text p {
+  max-width: 840px;
+}
+
 .nav-link__icon svg {
   stroke: none;
 }
