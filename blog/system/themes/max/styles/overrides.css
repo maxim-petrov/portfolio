@@ -64,3 +64,7 @@ body {
 .e2-note-snippet h1 a {
   text-decoration: none !important;
 }
+
+.e2-text-picture div:first-child {
+  display: none;
+}
