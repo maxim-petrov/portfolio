@@ -1,0 +1,40 @@
+a:3:{s:11:"notes_total";i:1;s:11:"notes_ctree";a:1:{i:0;a:32:{s:2:"id";i:2;s:5:"title";s:9:"Cloud4RPi";s:4:"href";s:42:"https://maximpetrov.ru/blog/all/cloud4rpi/";s:13:"href-original";s:42:"https://maximpetrov.ru/blog/all/cloud4rpi/";s:4:"time";a:2:{i:0;i:1711383857;i:1;a:2:{s:6:"offset";i:14400;s:6:"is_dst";b:0;}}s:13:"last-modified";a:2:{i:0;i:1712004035;i:1;a:2:{s:6:"offset";i:14400;s:6:"is_dst";b:0;}}s:4:"text";s:4144:"<p>Cloud4RPi — это платформа для интернета вещей (IoT), предлагает разработчикам инструменты для быстрого создания и управления IoT устройствами. Поддерживает множество аппаратных платформ, включая Arduino, Raspberry Pi, ESP8266, ESP32 и другие.</p>
+<p>В рамках работы над проектом был разработан интерфейс и сценарии работы с панелью управления IoT девайсами.</p>
+<h2>Лендинг страница</h2>
+<div class="e2-text-picture">
+<div style="width: 2560px; max-width: 100%"><div class="e2-text-proportional-wrapper" style="padding-bottom: 0.39%"><img src="https://maximpetrov.ru/blog/pictures/empty-image.jpg" width="2560" height="10" alt="" />
+</div></div><div class="e2-text-caption"><img src="/images/blog/1x/cloud4rpi-1.png" srcset="/images/blog/1x/cloud4rpi-1.png 1x, /images/blog/2x/cloud4rpi-1@2x.png 2x" class="img-fluid"></div>
+</div>
+<h2>Панель управления</h2>
+<div class="e2-text-picture">
+<div style="width: 2560px; max-width: 100%"><div class="e2-text-proportional-wrapper" style="padding-bottom: 0.39%"><img src="https://maximpetrov.ru/blog/pictures/empty-image.jpg" width="2560" height="10" alt="" />
+</div></div><div class="e2-text-caption"><img src="/images/blog/1x/cloud4rpi-2.png" srcset="/images/blog/1x/cloud4rpi-2.png 1x, /images/blog/2x/cloud4rpi-2@2x.png 2x" class="img-fluid"></div>
+</div>
+<h2>Визард добавления девайса</h2>
+<h3>Выбор модели</h3>
+<div class="e2-text-picture">
+<div style="width: 2560px; max-width: 100%"><div class="e2-text-proportional-wrapper" style="padding-bottom: 0.39%"><img src="https://maximpetrov.ru/blog/pictures/empty-image.jpg" width="2560" height="10" alt="" />
+</div></div><div class="e2-text-caption"><img src="/images/blog/1x/cloud4rpi-3.png" srcset="/images/blog/1x/cloud4rpi-3.png 1x, /images/blog/2x/cloud4rpi-3@2x.png 2x" class="img-fluid"></div>
+</div>
+<h3>Инструкции</h3>
+<div class="e2-text-picture">
+<div style="width: 2560px; max-width: 100%"><div class="e2-text-proportional-wrapper" style="padding-bottom: 0.39%"><img src="https://maximpetrov.ru/blog/pictures/empty-image.jpg" width="2560" height="10" alt="" />
+</div></div><div class="e2-text-caption"><img src="/images/blog/1x/cloud4rpi-4.png" srcset="/images/blog/1x/cloud4rpi-4.png 1x, /images/blog/2x/cloud4rpi-4@2x.png 2x" class="img-fluid"></div>
+</div>
+<h3>Устройство добавлено</h3>
+<div class="e2-text-picture">
+<div style="width: 2560px; max-width: 100%"><div class="e2-text-proportional-wrapper" style="padding-bottom: 0.39%"><img src="https://maximpetrov.ru/blog/pictures/empty-image.jpg" width="2560" height="10" alt="" />
+</div></div><div class="e2-text-caption"><img src="/images/blog/1x/cloud4rpi-5.png" srcset="/images/blog/1x/cloud4rpi-5.png 1x, /images/blog/2x/cloud4rpi-5@2x.png 2x" class="img-fluid"></div>
+</div>
+<h2>Управление подпиской</h2>
+<h3>Настройка пакетов</h3>
+<div class="e2-text-picture">
+<div style="width: 2560px; max-width: 100%"><div class="e2-text-proportional-wrapper" style="padding-bottom: 0.39%"><img src="https://maximpetrov.ru/blog/pictures/empty-image.jpg" width="2560" height="10" alt="" />
+</div></div><div class="e2-text-caption"><img src="/images/blog/1x/cloud4rpi-6.png" srcset="/images/blog/1x/cloud4rpi-6.png 1x, /images/blog/2x/cloud4rpi-6@2x.png 2x" class="img-fluid"></div>
+</div>
+<h3>Покупка дополнительных пакетов</h3>
+<div class="e2-text-picture">
+<div style="width: 2560px; max-width: 100%"><div class="e2-text-proportional-wrapper" style="padding-bottom: 0.39%"><img src="https://maximpetrov.ru/blog/pictures/empty-image.jpg" width="2560" height="10" alt="" />
+</div></div><div class="e2-text-caption"><img src="/images/blog/1x/cloud4rpi-7.png" srcset="/images/blog/1x/cloud4rpi-7.png 1x, /images/blog/2x/cloud4rpi-7@2x.png 2x" class="img-fluid"></div>
+</div>
+";s:11:"format-info";a:2:{s:14:"links-required";a:0:{}s:18:"resources-detected";a:8:{i:0;s:31:"/images/blog/1x/cloud4rpi-1.png";i:1;s:31:"/images/blog/1x/cloud4rpi-2.png";i:2;s:31:"/images/blog/1x/cloud4rpi-3.png";i:3;s:31:"/images/blog/1x/cloud4rpi-4.png";i:4;s:31:"/images/blog/1x/cloud4rpi-5.png";i:5;s:31:"/images/blog/1x/cloud4rpi-6.png";i:6;s:31:"/images/blog/1x/cloud4rpi-7.png";i:7;s:15:"empty-image.jpg";}}s:7:"summary";s:252:"Cloud4RPi — это платформа для интернета вещей (IoT), предлагает разработчикам инструменты для быстрого создания и управления IoT устройствами";s:12:"snippet-text";s:252:"Cloud4RPi — это платформа для интернета вещей (IoT), предлагает разработчикам инструменты для быстрого создания и управления IoT устройствами";s:6:"draft?";b:0;s:10:"scheduled?";b:0;s:7:"public?";b:1;s:7:"hidden?";b:0;s:8:"current?";b:0;s:10:"favourite?";b:0;s:6:"images";a:1:{i:0;a:5:{s:3:"src";s:52:"https://maximpetrov.ru/blog/pictures/empty-image.jpg";s:5:"width";i:2560;s:6:"height";i:10;s:13:"horizontality";d:256;s:11:"verticality";d:0;}}s:6:"thumbs";a:1:{i:0;a:6:{s:13:"is-available?";b:1;s:3:"src";s:68:"https://maximpetrov.ru/blog/pictures/thumbs/empty-image.thumb@2x.jpg";s:5:"width";i:90;s:6:"height";i:60;s:17:"original-filename";s:15:"empty-image.jpg";s:17:"original-filesize";s:6:"1 КБ";}}s:21:"source-main-image-url";s:0:"";s:9:"og-images";a:1:{i:0;s:52:"https://maximpetrov.ru/blog/pictures/empty-image.jpg";}s:16:"og-images-thumbs";a:1:{i:0;a:6:{s:13:"is-available?";b:1;s:3:"src";s:68:"https://maximpetrov.ru/blog/pictures/thumbs/empty-image.thumb@2x.jpg";s:5:"width";i:90;s:6:"height";i:60;s:17:"original-filename";s:15:"empty-image.jpg";s:17:"original-filesize";s:6:"1 КБ";}}s:4:"tags";a:1:{i:0;a:4:{s:8:"visible?";b:1;s:4:"name";s:9:"Cloud4RPi";s:4:"href";s:45:"https://maximpetrov.ru/blog/tags/cloud4rpi-2/";s:8:"current?";b:1;}}s:15:"sharing-buttons";b:0;s:7:"related";b:0;s:9:"read-href";s:47:"https://maximpetrov.ru/blog/all/cloud4rpi/read/";s:12:"preview-href";b:0;s:14:"comments-count";i:0;s:19:"comments-count-text";s:26:"0 комментариев";s:18:"new-comments-count";b:0;s:23:"new-comments-count-text";s:0:"";s:14:"comments-link?";b:0;s:13:"href-comments";s:51:"https://maximpetrov.ru/blog/all/cloud4rpi/#comments";}}s:11:"pages_ctree";a:5:{s:9:"timeline?";b:1;s:5:"count";i:1;s:4:"this";i:1;s:13:"earlier-title";s:10:"Ранее";s:11:"later-title";s:14:"Позднее";}}

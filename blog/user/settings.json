@@ -15,12 +15,12 @@
     "db": {
         "server": "localhost",
         "user_name": "045463090_blog",
-        "passw": "q4bFenvAlLazlmTNY9ZznnpnhIyM1q50TJtHPnZ04A==",
+        "passw": "cYKnhmCqgWOq2oC9Y7xkgpZOocqinsu2eHiWUUav4ZimqZU=",
         "name": "articus_blog"
     },
     "language": "ru",
     "blog_title": "Максим Петров",
-    "author": "",
+    "author": "Максим Петров",
     "author_email": "mail@maximpetrov.ru",
     "notifications": {
         "new_comments": false
@@ -29,18 +29,27 @@
         "favourites_on": true,
         "most_commented_on": false,
         "popular_on": false,
-        "tags_on": true,
+        "tags_on": false,
         "calendar_on": false,
         "random_on": false
     },
     "embed": {
-        "google-analytics": "",
-        "yandex-metrika": ""
+        "google-analytics": "<!-- Google tag (gtag.js) -->\r\n<script async src=\"https:\/\/www.googletagmanager.com\/gtag\/js?id=G-YLNRVFM6QC\"><\/script>\r\n<script>\r\n  window.dataLayer = window.dataLayer || [];\r\n  function gtag(){dataLayer.push(arguments);}\r\n  gtag('js', new Date());\r\n\r\n  gtag('config', 'G-YLNRVFM6QC');\r\n<\/script>",
+        "yandex-metrika": "<!-- Yandex.Metrika counter -->\r\n<script type=\"text\/javascript\" >\r\n   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};\r\n   m[i].l=1*new Date();\r\n   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}\r\n   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})\r\n   (window, document, \"script\", \"https:\/\/mc.yandex.ru\/metrika\/tag.js\", \"ym\");\r\n\r\n   ym(96911464, \"init\", {\r\n        clickmap:true,\r\n        trackLinks:true,\r\n        accurateTrackBounce:true,\r\n        webvisor:true\r\n   });\r\n<\/script>\r\n<noscript><div><img src=\"https:\/\/mc.yandex.ru\/watch\/96911464\" style=\"position:absolute; left:-9999px;\" alt=\"\" \/><\/div><\/noscript>\r\n<!-- \/Yandex.Metrika counter -->"
     },
     "timezone": {
         "offset": 14400,
         "is_dst": false
     },
     "blog_subtitle": "UI\/UX-дизайнер.",
-    "meta_description": ""
+    "meta_description": "",
+    "menu_order": [
+        "f",
+        "t6",
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5"
+    ]
 }

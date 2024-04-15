@@ -1,0 +1,50 @@
+M 0.06844    Exception caught: Could not count total notes of "e2m_favourites" list (1045)
+
+AeMySQLAccessDeniedException in system/core.php:2
+
+┌─
+│            1. index.php:1 e2 ()
+│            2. system/core.php:2 e2m_favourites (
+│              array (
+│                'page' =&gt; '1',
+│              )
+│            )
+│            3. system/core.php:2 getNotesCTree ()
+│            4. system/core.php:2 run ()
+│            5. system/core.php:2 prepareCacheableData ()
+│            6. system/core.php:2 fm (
+│              'SELECT COUNT(*) Total FROM `e2BlogNotes` n WHERE `SubsetID`=1 AND `IsPublished`=1 AND `IsFavourite`=1 AND (n.`IsVisible` = 1 AND n.`Stamp` &lt;= 1711785924) ORDER BY `Stamp` DESC',
+│              'count total notes of "e2m_favourites" list'
+│            )
+│            7. system/core.php:2 dm (
+│              AeDatabaseConfiguration::__set_state(array(
+│                 'server' =&gt; 'localhost',
+│                 'host' =&gt; 'localhost',
+│                 'port' =&gt; NULL,
+│                 'user' =&gt; '045463090_blog',
+│                 'password' =&gt; 'q4bFenvAlLazlmTNY9ZznnpnhIyM1q50TJtHPnZ04A==',
+│                 'name' =&gt; 'articus_blog',
+│                 'source' =&gt; 'settings',
+│                 'backup_dir' =&gt; 'user/backup/',
+│                 'prefix' =&gt; 'e2Blog',
+│                 'subset' =&gt; 1,
+│              )),
+│              'SELECT COUNT(*) Total FROM `e2BlogNotes` n WHERE `SubsetID`=1 AND `IsPublished`=1 AND `IsFavourite`=1 AND (n.`IsVisible` = 1 AND n.`Stamp` &lt;= 1711785924) ORDER BY `Stamp` DESC',
+│              'count total notes of "e2m_favourites" list'
+│            )
+│            8. system/core.php:2 mm (
+│              AeDatabaseConfiguration::__set_state(array(
+│                 'server' =&gt; 'localhost',
+│                 'host' =&gt; 'localhost',
+│                 'port' =&gt; NULL,
+│                 'user' =&gt; '045463090_blog',
+│                 'password' =&gt; 'q4bFenvAlLazlmTNY9ZznnpnhIyM1q50TJtHPnZ04A==',
+│                 'name' =&gt; 'articus_blog',
+│                 'source' =&gt; 'settings',
+│                 'backup_dir' =&gt; 'user/backup/',
+│                 'prefix' =&gt; 'e2Blog',
+│                 'subset' =&gt; 1,
+│              )),
+│              'count total notes of "e2m_favourites" list'
+│            )
+└─

@@ -1,0 +1,189 @@
+M 0.00241    Installer: force directories
+M 0.00241    Installer: write password hash
+M 0.00241    Ensure: Establishing connection "045463090_blog@localhost"
+M 0.00241    Ensure: Running on "MariaDB", version "10.5.21"
+M 0.00241    Ensure: Selecting database "articus_blog"
+M 0.00241    DB [1]: SET NAMES utf8mb4
+M 0.00241    DB [?]: SHOW TABLES FROM `articus_blog`
+M 0.00241    Installer: data exists and migrateable
+M 0.00247    Installer: no need to create tables, will migrate
+M 0.00252    DB [2]: SET sql_quote_show_create=1
+M 0.00266    Ensure encoding utf8mb4 on all native tables {
+M 0.0027       Migrate: Check table e2BlogActions
+M 0.00273      DB [3]: SHOW TABLE STATUS LIKE 'e2BlogActions'
+M 0.00283      Migrate: Check table e2BlogAliases
+M 0.00288      DB [4]: SHOW TABLE STATUS LIKE 'e2BlogAliases'
+M 0.00288      Migrate: Check table e2BlogComments
+M 0.00288      DB [5]: SHOW TABLE STATUS LIKE 'e2BlogComments'
+M 0.00288      Migrate: Check table e2BlogGIPsSessions
+M 0.00294      DB [6]: SHOW TABLE STATUS LIKE 'e2BlogGIPsSessions'
+M 0.00303      Migrate: Check table e2BlogKeywords
+M 0.0031       DB [7]: SHOW TABLE STATUS LIKE 'e2BlogKeywords'
+M 0.00317      Migrate: Check table e2BlogNotes
+M 0.00322      DB [8]: SHOW TABLE STATUS LIKE 'e2BlogNotes'
+M 0.00331      Migrate: Check table e2BlogNotesKeywords
+M 0.00338      DB [9]: SHOW TABLE STATUS LIKE 'e2BlogNotesKeywords'
+M 0.00346      Migrate: Check table e2BlogSources
+M 0.00351      DB [10]: SHOW TABLE STATUS LIKE 'e2BlogSources'
+M 0.00359    }
+M 0.00365    Ensure encoding utf8mb4 on all Rose tables {
+M 0.00369      Migrate: Check table e2BlogRoseContents
+M 0.00373      DB [11]: SHOW TABLE STATUS LIKE 'e2BlogRoseContents'
+M 0.00381      Migrate: Check table e2BlogRoseWord
+M 0.00386      DB [12]: SHOW TABLE STATUS LIKE 'e2BlogRoseWord'
+M 0.00395      Migrate: Check table e2BlogRoseFulltext
+M 0.00401      DB [13]: SHOW TABLE STATUS LIKE 'e2BlogRoseFulltext'
+M 0.00408      Migrate: Check table e2BlogRoseKeyword
+M 0.00413      DB [14]: SHOW TABLE STATUS LIKE 'e2BlogRoseKeyword'
+M 0.0042       Migrate: Check table e2BlogRoseKeywordMultiple
+M 0.00425      DB [15]: SHOW TABLE STATUS LIKE 'e2BlogRoseKeywordMultiple'
+M 0.00434    }
+M 0.0044     Fix problems with table structure {
+M 0.00444      DB [16]: SHOW TABLES LIKE 'e2BlogActions'
+M 0.00451      DB [17]: SHOW CREATE TABLE `e2BlogActions`
+M 0.00451      DB [18]: SHOW INDEX FROM `e2BlogActions`
+M 0.00452      DB [19]: UPDATE `e2BlogActions` SET `SubsetID` = 1 WHERE `SubsetID` = 0
+M 0.00462      DB [20]: SHOW TABLES LIKE 'e2BlogAliases'
+M 0.00469      DB [21]: SHOW CREATE TABLE `e2BlogAliases`
+M 0.00473      DB [22]: SHOW INDEX FROM `e2BlogAliases`
+M 0.00479      DB [23]: UPDATE `e2BlogAliases` SET `SubsetID` = 1 WHERE `SubsetID` = 0
+M 0.00488      DB [24]: SHOW TABLES LIKE 'e2BlogComments'
+M 0.00493      DB [25]: SHOW CREATE TABLE `e2BlogComments`
+M 0.00501      DB [26]: SHOW INDEX FROM `e2BlogComments`
+M 0.00501      DB [27]: UPDATE `e2BlogComments` SET `SubsetID` = 1 WHERE `SubsetID` = 0
+M 0.00517      DB [28]: SHOW TABLES LIKE 'e2BlogGIPsSessions'
+M 0.00523      DB [29]: SHOW CREATE TABLE `e2BlogGIPsSessions`
+M 0.0053       DB [30]: SHOW INDEX FROM `e2BlogGIPsSessions`
+M 0.00538      Drop erroneous index "SubsetID" on "e2BlogGIPsSessions"
+M 0.00542      DB [31]: ALTER TABLE `e2BlogGIPsSessions` DROP INDEX `SubsetID`
+M 0.00552      DB [32]: UPDATE `e2BlogGIPsSessions` SET `SubsetID` = 1 WHERE `SubsetID` = 0
+M 0.00552      DB [33]: SHOW TABLES LIKE 'e2BlogKeywords'
+M 0.00552      DB [34]: SHOW CREATE TABLE `e2BlogKeywords`
+M 0.00552      DB [35]: SHOW INDEX FROM `e2BlogKeywords`
+M 0.00552      DB [36]: UPDATE `e2BlogKeywords` SET `SubsetID` = 1 WHERE `SubsetID` = 0
+M 0.00552      DB [37]: SHOW TABLES LIKE 'e2BlogNotes'
+M 0.00552      DB [38]: SHOW CREATE TABLE `e2BlogNotes`
+M 0.00555      DB [39]: SHOW INDEX FROM `e2BlogNotes`
+M 0.00561      DB [40]: UPDATE `e2BlogNotes` SET `SubsetID` = 1 WHERE `SubsetID` = 0
+M 0.00567      DB [41]: SHOW TABLES LIKE 'e2BlogNotesKeywords'
+M 0.00572      DB [42]: SHOW CREATE TABLE `e2BlogNotesKeywords`
+M 0.00576      DB [43]: SHOW INDEX FROM `e2BlogNotesKeywords`
+M 0.00581      DB [44]: UPDATE `e2BlogNotesKeywords` SET `SubsetID` = 1 WHERE `SubsetID` = 0
+M 0.00587      DB [45]: SHOW TABLES LIKE 'e2BlogSources'
+M 0.00592      DB [46]: SHOW CREATE TABLE `e2BlogSources`
+M 0.00596      DB [47]: SHOW INDEX FROM `e2BlogSources`
+M 0.006        DB [48]: UPDATE `e2BlogSources` SET `SubsetID` = 1 WHERE `SubsetID` = 0
+M 0.00607    }
+M 0.0061     Ensure modern table structure {
+M 0.00612      DB [49]: UPDATE `e2BlogAliases` SET `EntityType` = 'n' WHERE `EntityType` = ''
+M 0.00619      Will clean up “leaked” tag aliases
+M 0.00621      DB [50]: DELETE FROM `e2BlogAliases` WHERE `ID` IN (SELECT `ID` FROM (SELECT a.`ID` FROM `e2BlogAliases` a LEFT OUTER JOIN `e2BlogKeywords` e ON a.`EntityID` = e.`ID` WHERE a.`EntityType` = 't' AND e.`ID` IS NULL) AS temp)
+M 0.00627      DB [51]: UPDATE `e2BlogKeywords` SET `Summary` = '' WHERE `Summary` IS NULL
+M 0.00633      DB [52]: UPDATE `e2BlogKeywords` SET `Uploads` = '' WHERE `Uploads` IS NULL
+M 0.00639      DB [53]: ALTER TABLE `e2BlogNotes` CHANGE `FormatterID` `FormatterID` VARCHAR( 32 ) DEFAULT 'neasden' NOT NULL
+M 0.00649      DB [54]: UPDATE `e2BlogNotes` SET `Summary` = '' WHERE `Summary` IS NULL
+M 0.00659      DB [55]: UPDATE `e2BlogNotes` SET `Uploads` = '' WHERE `Uploads` IS NULL
+M 0.00665      DB [56]: UPDATE `e2BlogNotes` SET `SourceNoteData` = '' WHERE `SourceNoteData` IS NULL
+M 0.0067     }
+M 0.00672    Ensure indexes {
+M 0.00674      Switch from Calliope to Neasden {
+M 0.00676        DB [57]: UPDATE `e2BlogNotes` SET `FormatterID` = 'neasden' WHERE `SubsetID`=1 AND `FormatterID` = 'calliope' AND (`IsPublished` = '0' OR (`IsPublished` = '1' AND !(0 OR `Text` LIKE '%!!%' OR `Text` LIKE '%||%' OR `Text` LIKE '%\%\%%' OR `Text` LIKE '%##%' OR `Text` LIKE '%++%' OR `Text` LIKE '%((html%' OR `Text` LIKE '%((img%' OR `Text` LIKE '%((link%' OR `Text` LIKE '%((%.jpg%' OR `Text` LIKE '%((%.jpeg%' OR `Text` LIKE '%((%.gif%' OR `Text` LIKE '%((%.png%' OR `Text` LIKE '%((%.webp%' OR `Text` LIKE '%[[html%' OR `Text` LIKE '%[[img%' OR `Text` LIKE '%[[link%' OR `Text` LIKE '%[[%.jpg%' OR `Text` LIKE '%[[%.jpeg%' OR `Text` LIKE '%[[%.gif%' OR `Text` LIKE '%[[%.png%' OR `Text` LIKE '%[[%.webp%' )))
+M 0.00681        0 drafts and notes with simple formatting switched
+M 0.00684        DB [58]: SELECT `ID` FROM `e2BlogNotes` WHERE `SubsetID`=1 AND `FormatterID` = 'calliope'
+M 0.00689        0 with complex formatting remain
+M 0.00692      }
+M 0.00697    }
+M 0.00702    Search: unmark and unindex subset
+M 0.00707    No database configuration found in Environment
+M 0.00711    No database configuration found in Config
+M 0.00715    Database configuration found in Settings
+M 0.0072     Will mark all notes for reindexing
+M 0.00724    DB [59]: UPDATE `e2BlogNotes` SET `IsIndexed`=0 WHERE `SubsetID`=1
+M 0.01102    Installer: write settings
+M 0.01122    Installer: search index
+M 0.01153    Caches: Drop all kinds of caches
+M 0.01189    Backup to user/backup/
+M 0.01203    Backup: wrote header
+M 0.01208    Backup: table e2BlogActions, subset 1
+M 0.01219    Backup: wrote table definition with result 1
+M 0.01231    Backup: chunk size 50000
+M 0.01248    Backup: wrote table data with result 1
+M 0.01252    Backup: table e2BlogAliases, subset 1
+M 0.01258    Backup: wrote table definition with result 1
+M 0.01262    Backup: chunk size 20000
+M 0.0127     Backup: wrote table data with result 1
+M 0.01273    Backup: table e2BlogComments, subset 1
+M 0.01277    Backup: wrote table definition with result 1
+M 0.01282    Backup: chunk size 5000
+M 0.01285    Backup: wrote table data with result 1
+M 0.01287    Backup: table e2BlogGIPsSessions, subset 1
+M 0.01292    Backup: wrote table definition with result 1
+M 0.01297    Backup: chunk size 5000
+M 0.013      Backup: wrote table data with result 1
+M 0.01302    Backup: table e2BlogKeywords, subset 1
+M 0.01302    Backup: wrote table definition with result 1
+M 0.01302    Backup: chunk size 5000
+M 0.01302    Backup: wrote table data with result 1
+M 0.01302    Backup: table e2BlogNotes, subset 1
+M 0.01302    Backup: wrote table definition with result 1
+M 0.01302    Backup: chunk size 5000
+M 0.01302    Backup: wrote table data with result 1
+M 0.01302    Backup: table e2BlogNotesKeywords, subset 1
+M 0.01302    Backup: wrote table definition with result 1
+M 0.01302    Backup: chunk size 5000
+M 0.01302    Backup: wrote table data with result 1
+M 0.01302    Backup: table e2BlogSources, subset 1
+M 0.01302    Backup: wrote table definition with result 1
+M 0.01302    Backup: chunk size 5000
+M 0.01302    Backup: wrote table data with result 1
+M 0.01302    Backup: wrote data with running == 1
+M 0.01302    No need to sift
+M 0.01302    Installer: instantiate
+M 0.01302    Installer: complete
+M 0.01302    Running on Apache
+M 0.01302    There is an .htaccess file in the installation directory
+M 0.01302    Spawn: Curl https://maximpetrov.ru/blog/settings/underhood/index/ using get...
+M 0.01567    Spawn: Curl returns: [Array
+(
+    [url] => https://maximpetrov.ru/blog/settings/underhood/index/
+    [content_type] => text/html; charset=UTF-8
+    [http_code] => 200
+    [header_size] => 166
+    [request_size] => 193
+    [filetime] => -1
+    [ssl_verify_result] => 20
+    [redirect_count] => 0
+    [total_time] => 0.151959
+    [namelookup_time] => 0.019379
+    [connect_time] => 0.020583
+    [pretransfer_time] => 0.025572
+    [size_upload] => 0
+    [size_download] => 334
+    [speed_download] => 2197
+    [speed_upload] => 0
+    [download_content_length] => -1
+    [upload_content_length] => 0
+    [starttransfer_time] => 0.025654
+    [redirect_time] => 0
+    [redirect_url] => 
+    [primary_ip] => 195.161.41.242
+    [certinfo] => Array
+        (
+        )
+
+    [primary_port] => 443
+    [local_ip] => 195.161.41.242
+    [local_port] => 35890
+    [http_version] => 3
+    [protocol] => 2
+    [ssl_verifyresult] => 0
+    [scheme] => HTTPS
+    [appconnect_time_us] => 46003
+    [connect_time_us] => 20583
+    [namelookup_time_us] => 19379
+    [pretransfer_time_us] => 25572
+    [redirect_time_us] => 0
+    [starttransfer_time_us] => 25654
+    [total_time_us] => 151959
+)
+] [<pre>No old lock<br />New lock is 1711391251<br /><br />Portion 1<br />Indexing: Дизайн система Blazor<br />Indexing: XAF<br />Indexing: Documentation<br />Indexing: Localization<br />Indexing: Cloud4RPi<br />Indexing: Support Center<br />Steps done 6, spent 0.118 ms so far<br /><br />Indexing complete<br /><br /></pre>], (errno=0, errstr=)...

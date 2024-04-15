@@ -1,0 +1,106 @@
+A 0.00274    Exception caught: Could not count notes with flags p1v0 (1045)
+
+AeMySQLAccessDeniedException in system/core.php:2
+
+┌─
+│            1. index.php:1 e2 ()
+│            2. system/core.php:2 xv ()
+│            3. system/core.php:2 bf (
+│              true,
+│              false
+│            )
+│            4. system/core.php:2 fm (
+│              'SELECT COUNT(*) As NotesCount FROM `e2BlogNotes` WHERE `SubsetID`=1 AND `IsPublished`=1 AND `IsVisible`=0',
+│              'count notes with flags p1v0'
+│            )
+│            5. system/core.php:2 dm (
+│              AeDatabaseConfiguration::__set_state(array(
+│                 'server' =&gt; 'localhost',
+│                 'host' =&gt; 'localhost',
+│                 'port' =&gt; NULL,
+│                 'user' =&gt; '045463090_blog',
+│                 'password' =&gt; 'q4bFenvAlLazlmTNY9ZznnpnhIyM1q50TJtHPnZ04A==',
+│                 'name' =&gt; 'articus_blog',
+│                 'source' =&gt; 'settings',
+│                 'backup_dir' =&gt; 'user/backup/',
+│                 'prefix' =&gt; 'e2Blog',
+│                 'subset' =&gt; 1,
+│              )),
+│              'SELECT COUNT(*) As NotesCount FROM `e2BlogNotes` WHERE `SubsetID`=1 AND `IsPublished`=1 AND `IsVisible`=0',
+│              'count notes with flags p1v0'
+│            )
+│            6. system/core.php:2 mm (
+│              AeDatabaseConfiguration::__set_state(array(
+│                 'server' =&gt; 'localhost',
+│                 'host' =&gt; 'localhost',
+│                 'port' =&gt; NULL,
+│                 'user' =&gt; '045463090_blog',
+│                 'password' =&gt; 'q4bFenvAlLazlmTNY9ZznnpnhIyM1q50TJtHPnZ04A==',
+│                 'name' =&gt; 'articus_blog',
+│                 'source' =&gt; 'settings',
+│                 'backup_dir' =&gt; 'user/backup/',
+│                 'prefix' =&gt; 'e2Blog',
+│                 'subset' =&gt; 1,
+│              )),
+│              'count notes with flags p1v0'
+│            )
+└─
+A 0.00352    Panic: Could not count new comments for author menu (1045)
+
+AeMySQLAccessDeniedException in system/core.php:2
+
+┌─
+│            1. index.php:1 e2 ()
+│            2. system/core.php:2 c ()
+│            3. system/core.php:2 lb (
+│              AeDatabaseConfiguration::__set_state(array(
+│                 'server' =&gt; 'localhost',
+│                 'host' =&gt; 'localhost',
+│                 'port' =&gt; NULL,
+│                 'user' =&gt; '045463090_blog',
+│                 'password' =&gt; 'q4bFenvAlLazlmTNY9ZznnpnhIyM1q50TJtHPnZ04A==',
+│                 'name' =&gt; 'articus_blog',
+│                 'source' =&gt; 'settings',
+│                 'backup_dir' =&gt; 'user/backup/',
+│                 'prefix' =&gt; 'e2Blog',
+│                 'subset' =&gt; 1,
+│              ))
+│            )
+│            4. system/core.php:2 fm (
+│              'SELECT `NoteID`, `Text` FROM `e2BlogComments` WHERE `SubsetID`=1 AND `IsNew`=1 ORDER BY `Stamp` DESC',
+│              'count new comments for author menu'
+│            )
+│            5. system/core.php:2 dm (
+│              AeDatabaseConfiguration::__set_state(array(
+│                 'server' =&gt; 'localhost',
+│                 'host' =&gt; 'localhost',
+│                 'port' =&gt; NULL,
+│                 'user' =&gt; '045463090_blog',
+│                 'password' =&gt; 'q4bFenvAlLazlmTNY9ZznnpnhIyM1q50TJtHPnZ04A==',
+│                 'name' =&gt; 'articus_blog',
+│                 'source' =&gt; 'settings',
+│                 'backup_dir' =&gt; 'user/backup/',
+│                 'prefix' =&gt; 'e2Blog',
+│                 'subset' =&gt; 1,
+│              )),
+│              'SELECT `NoteID`, `Text` FROM `e2BlogComments` WHERE `SubsetID`=1 AND `IsNew`=1 ORDER BY `Stamp` DESC',
+│              'count new comments for author menu'
+│            )
+│            6. system/core.php:2 mm (
+│              AeDatabaseConfiguration::__set_state(array(
+│                 'server' =&gt; 'localhost',
+│                 'host' =&gt; 'localhost',
+│                 'port' =&gt; NULL,
+│                 'user' =&gt; '045463090_blog',
+│                 'password' =&gt; 'q4bFenvAlLazlmTNY9ZznnpnhIyM1q50TJtHPnZ04A==',
+│                 'name' =&gt; 'articus_blog',
+│                 'source' =&gt; 'settings',
+│                 'backup_dir' =&gt; 'user/backup/',
+│                 'prefix' =&gt; 'e2Blog',
+│                 'subset' =&gt; 1,
+│              )),
+│              'count new comments for author menu'
+│            )
+└─
+A 0.00362    :-(
+A 0.00371    Eat "system/theme/templates/panic.tmpl.php"

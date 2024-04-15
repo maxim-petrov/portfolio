@@ -1,0 +1,48 @@
+a:3:{s:11:"notes_total";i:1;s:11:"notes_ctree";a:1:{i:0;a:32:{s:2:"id";i:4;s:5:"title";s:13:"Documentation";s:4:"href";s:46:"https://maximpetrov.ru/blog/all/documentation/";s:13:"href-original";s:46:"https://maximpetrov.ru/blog/all/documentation/";s:4:"time";a:2:{i:0;i:1711383886;i:1;a:2:{s:6:"offset";i:14400;s:6:"is_dst";b:0;}}s:13:"last-modified";a:2:{i:0;i:1711906616;i:1;a:2:{s:6:"offset";i:14400;s:6:"is_dst";b:0;}}s:4:"text";s:8419:"<p>DevExpress Documentation — одна из самый объемных документации на рынке. Содержит несколько сотен тысяч статей и АПИ. Внутри для её работы создана целая экосистема, включающая в себя множество отдельных компонентов.</p>
+<div class="e2-text-picture">
+<div style="width: 2560px; max-width: 100%"><div class="e2-text-proportional-wrapper" style="padding-bottom: 0.39%"><img src="https://maximpetrov.ru/blog/pictures/empty-image.jpg" width="2560" height="10" alt="" />
+</div></div><div class="e2-text-caption"><img src="/images/blog/1x/docs-1.png" srcset="/images/blog/1x/docs-1.png 1x, /images/blog/2x/docs-1@2x.png 2x" class="img-fluid"></div>
+</div>
+<h2>Вводная</h2>
+<p>Долгое время единой системы документации не было. Всё состояло из отдельных проектов и отдавалось пользователям в формате довольно простых HTML файлов, либо в CHM формате.</p>
+<p>С развитием продуктовой линейки и увеличение штата технических писателей такой подход стал приносить неудобства как для сотрудников, так и для пользователей.</p>
+<p>Учитывай количество и объем документов, было принято решение сделать собственную систему документации.</p>
+<h2>Задачи</h2>
+<p>Система документации состоит из различных функциональных компонентов. При разработке дизайна нужно было учесть следующие факторы:</p>
+<ul>
+<li><b>Огромное количество написанных топиков.</b> Разные топики были написаны разными людьми, в разное время. Поэтому, сильно отличались по структуре. Нужно было найти такой подход к стилям, чтобы старые документы не ломали внешний вид страниц.</li>
+<li><b>Документацию читают с разных устройств.</b> Нужно было сделать документацию такой, чтобы её можно было читать на любом экране.</li>
+<li><b>Навигация по проекту должна быть удобной.</b> Структура каждого проекта документации древовидна, один проект может быть вложен в другой и так далее. Нужно сделать так, чтобы пользователь понимал, на каком уровне он находится и мог легко навигироваться между документами.</li>
+<li><b>Поиск по документу должен быть удобным.</b> Документы внутри проекта могут быть большими и сложными. Нужно сделать так, чтобы пользователь мог быстро найти ответ на свой вопрос внутри конкретного документа.</li>
+<li><b>Сделать разводящую страницу по проектам.</b> Новая система документации собирает все проекты в рамках одного сайта. Важно было сделать страницу, где пользователь может выбрать нужный ему проект.</li>
+<li><b>Содержимое документа может варьировать от версии продукта и его платформы.</b></li>
+<li><b>Совместно с техническими писателями подготовить гайдлайны по оформлению топиков.</b></li>
+<li><b>Учесть оффлайн документацию.</b> Часть пользователей, в свете специфики бизнеса, используют активно оффлайн версию документации. А именно, CHM. Поэтому, нужно было подготовить стили для оффлайн документации. Учитывая, что CHM поддерживает CSS уровня Internet Explorer 7 (и то не всегда) — это было очень непростой задачей.</li>
+<li><b>Поддержать интеграцию с саппорт-центром.</b> Сегмент пользователей читающих документацию и создающих тикеты в саппорт-центре тесно связан. Важно было найти такое решение, чтобы пользователь имел возможность создать тикет прямо из документации, если ему не понятен какой-то из топиков. И наоборот, если ссылку на топик дал сотрудник саппорт-центра, то нужно иметь возможность дополнительно уточнить у пользователя, помог ли ему этот топик.</li>
+<li><b>Сделать документацию доступной.</b> Сайт документации должен удовлетворять требования A11Y, чтобы им было удобно пользоваться всем пользователям.</li>
+</ul>
+<h2>Результат</h2>
+<p>Новая система документации получила положительный фидбек как со стороны пользователей, так и со стороны технических писателей. Основная часть задач была решения в рамках основной работы над проектом, многие дополнительные фичи — в рамках доработок по проекту.</p>
+<p>Кроме работы непосредственно над дизайном, я внёс большой вклад во фронденд составляющую сайта:</p>
+<ul>
+<li>Написал несколько функциональных фич.</li>
+<li>Обновил семантику сайта, для решения проблем связанных с доступностью.</li>
+<li>Активно работал со стилям в коде.</li>
+</ul>
+<h3>Примеры реализации</h3>
+<h4>Разводящая страница</h4>
+<div class="e2-text-picture">
+<div style="width: 2560px; max-width: 100%"><div class="e2-text-proportional-wrapper" style="padding-bottom: 0.39%"><img src="https://maximpetrov.ru/blog/pictures/empty-image.jpg" width="2560" height="10" alt="" />
+</div></div><div class="e2-text-caption"><img src="/images/blog/1x/docs-2.png" srcset="/images/blog/1x/docs-2.png 1x, /images/blog/2x/docs-2@2x.png 2x" class="img-fluid"></div>
+</div>
+<h4>Доступность со всех устройств</h4>
+<div class="e2-text-picture">
+<div style="width: 2560px; max-width: 100%"><div class="e2-text-proportional-wrapper" style="padding-bottom: 0.39%"><img src="https://maximpetrov.ru/blog/pictures/empty-image.jpg" width="2560" height="10" alt="" />
+</div></div><div class="e2-text-caption"><img src="/images/blog/1x/docs-3.png" srcset="/images/blog/1x/docs-3.png 1x, /images/blog/2x/docs-3@2x.png 2x" class="img-fluid"></div>
+</div>
+<h4>Доступность</h4>
+<div class="e2-text-picture">
+<div style="width: 2560px; max-width: 100%"><div class="e2-text-proportional-wrapper" style="padding-bottom: 0.39%"><img src="https://maximpetrov.ru/blog/pictures/empty-image.jpg" width="2560" height="10" alt="" />
+</div></div><div class="e2-text-caption"><img src="/images/blog/1x/docs-4.png" srcset="/images/blog/1x/docs-4.png 1x, /images/blog/2x/docs-4@2x.png 2x" class="img-fluid"></div>
+</div>
+";s:11:"format-info";a:2:{s:14:"links-required";a:0:{}s:18:"resources-detected";a:5:{i:0;s:26:"/images/blog/1x/docs-1.png";i:1;s:26:"/images/blog/1x/docs-2.png";i:2;s:26:"/images/blog/1x/docs-3.png";i:3;s:26:"/images/blog/1x/docs-4.png";i:4;s:15:"empty-image.jpg";}}s:7:"summary";s:200:"DevExpress Documentation — одна из самый объемных документации на рынке. Содержит несколько сотен тысяч статей и АПИ...";s:12:"snippet-text";s:200:"DevExpress Documentation — одна из самый объемных документации на рынке. Содержит несколько сотен тысяч статей и АПИ...";s:6:"draft?";b:0;s:10:"scheduled?";b:0;s:7:"public?";b:1;s:7:"hidden?";b:0;s:8:"current?";b:0;s:10:"favourite?";b:1;s:6:"images";a:1:{i:0;a:5:{s:3:"src";s:52:"https://maximpetrov.ru/blog/pictures/empty-image.jpg";s:5:"width";i:2560;s:6:"height";i:10;s:13:"horizontality";d:256;s:11:"verticality";d:0;}}s:6:"thumbs";a:1:{i:0;a:6:{s:13:"is-available?";b:1;s:3:"src";s:68:"https://maximpetrov.ru/blog/pictures/thumbs/empty-image.thumb@2x.jpg";s:5:"width";i:90;s:6:"height";i:60;s:17:"original-filename";s:15:"empty-image.jpg";s:17:"original-filesize";s:6:"1 КБ";}}s:21:"source-main-image-url";s:0:"";s:9:"og-images";a:1:{i:0;s:52:"https://maximpetrov.ru/blog/pictures/empty-image.jpg";}s:16:"og-images-thumbs";a:1:{i:0;a:6:{s:13:"is-available?";b:1;s:3:"src";s:68:"https://maximpetrov.ru/blog/pictures/thumbs/empty-image.thumb@2x.jpg";s:5:"width";i:90;s:6:"height";i:60;s:17:"original-filename";s:15:"empty-image.jpg";s:17:"original-filesize";s:6:"1 КБ";}}s:4:"tags";a:1:{i:0;a:4:{s:8:"visible?";b:1;s:4:"name";s:13:"Documentation";s:4:"href";s:49:"https://maximpetrov.ru/blog/tags/documentation-2/";s:8:"current?";b:1;}}s:15:"sharing-buttons";b:0;s:7:"related";b:0;s:9:"read-href";s:51:"https://maximpetrov.ru/blog/all/documentation/read/";s:12:"preview-href";b:0;s:14:"comments-count";i:0;s:19:"comments-count-text";s:26:"0 комментариев";s:18:"new-comments-count";b:0;s:23:"new-comments-count-text";s:0:"";s:14:"comments-link?";b:0;s:13:"href-comments";s:55:"https://maximpetrov.ru/blog/all/documentation/#comments";}}s:11:"pages_ctree";a:5:{s:9:"timeline?";b:1;s:5:"count";i:1;s:4:"this";i:1;s:13:"earlier-title";s:10:"Ранее";s:11:"later-title";s:14:"Позднее";}}
