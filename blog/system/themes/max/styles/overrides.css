@@ -19,7 +19,7 @@ body {
 
 .e2-text p {
   max-width: 840px;
-  color: #000;
+  color: rgb(55, 53, 47);
 }
 
 .nav-link__icon svg {
@@ -60,17 +60,21 @@ body {
 .e2-text h2 {
   font-size: 30px;
   font-weight: 700;
-  line-height: 32px;
+  line-height: 1.3;
 }
 
 .e2-text h3 {
+  margin-top: 36px;
+  margin-bottom: 10px;
   font-size: 24px;
-  line-height: 26px;
+  line-height: 1.3;
 }
 
 .e2-text h4 {
+  margin-top: 36px;
+  margin-bottom: 10px;
   font-size: 20px;
-  line-height: 22px;
+  line-height: 1.3;
 }
 
 .e2-note h1 a {
@@ -85,3 +89,41 @@ body {
   display: none;
 }
 
+.e2-text ul li {
+  list-style-type: inherit;
+}
+
+.e2-text p,
+.e2-text ul,
+.e2-text ol,
+.e2-text li,
+.e2-text pre,
+.e2-text blockquote,
+.e2-text-audio {
+  max-width: 840px;
+}
+
+.e2-text p + ul,
+.e2-text p + ol {
+  margin-top: 0;
+}
+
+li > ul {
+  margin-top: 10px !important;
+}
+
+.e2-note-snippet .e2-note-thumbs {
+  display: none;
+}
+
+.navbar__photo.navbar-brand a {
+  color: transparent;
+}
+
+.e2-text h2+h3 {
+  margin-top: 36px;
+}
+
+.e2-note-favourite-title::after {
+  content: "";
+}

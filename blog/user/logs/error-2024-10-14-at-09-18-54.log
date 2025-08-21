@@ -1,0 +1,65 @@
+Y 0.04984    Exception caught: Could not run some query (2002)
+
+AeMySQLCannotConnectException in system/core.php:2
+
+┌─
+│            1. index.php:1 e2 ()
+│            2. system/core.php:2 jq (
+│              array (
+│                'alias' =&gt; 'documentation',
+│                'is-published' =&gt; '1',
+│                'preview-key' =&gt; '0',
+│              )
+│            )
+│            3. system/core.php:2 e2_published_noterec_with_parameters_ (
+│              array (
+│                'alias' =&gt; 'documentation',
+│                'is-published' =&gt; '1',
+│                'preview-key' =&gt; '0',
+│              )
+│            )
+│            4. system/core.php:2 e2_noterec_with_parameters_ (
+│              array (
+│                'alias' =&gt; 'documentation',
+│                'is-published' =&gt; '1',
+│                'preview-key' =&gt; '0',
+│              )
+│            )
+│            5. system/core.php:2 hm (
+│              4
+│            )
+│            6. system/core.php:2 fm (
+│              'SELECT * FROM `e2BlogNotes` WHERE `SubsetID`=1 AND `ID` = \'4\''
+│            )
+│            7. system/core.php:2 dm (
+│              AeDatabaseConfiguration::__set_state(array(
+│                 'server' =&gt; 'localhost',
+│                 'host' =&gt; 'localhost',
+│                 'port' =&gt; NULL,
+│                 'user' =&gt; '045463090_blog',
+│                 'password' =&gt; 'cYKnhmCqgWOq2oC9Y7xkgpZOocqinsu2eHiWUUav4ZimqZU=',
+│                 'name' =&gt; 'articus_blog',
+│                 'source' =&gt; 'settings',
+│                 'backup_dir' =&gt; 'user/backup/',
+│                 'prefix' =&gt; 'e2Blog',
+│                 'subset' =&gt; 1,
+│              )),
+│              'SELECT * FROM `e2BlogNotes` WHERE `SubsetID`=1 AND `ID` = \'4\'',
+│              'run some query'
+│            )
+│            8. system/core.php:2 mm (
+│              AeDatabaseConfiguration::__set_state(array(
+│                 'server' =&gt; 'localhost',
+│                 'host' =&gt; 'localhost',
+│                 'port' =&gt; NULL,
+│                 'user' =&gt; '045463090_blog',
+│                 'password' =&gt; 'cYKnhmCqgWOq2oC9Y7xkgpZOocqinsu2eHiWUUav4ZimqZU=',
+│                 'name' =&gt; 'articus_blog',
+│                 'source' =&gt; 'settings',
+│                 'backup_dir' =&gt; 'user/backup/',
+│                 'prefix' =&gt; 'e2Blog',
+│                 'subset' =&gt; 1,
+│              )),
+│              'run some query'
+│            )
+└─
