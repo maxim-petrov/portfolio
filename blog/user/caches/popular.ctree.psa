@@ -155,6 +155,7 @@ empty-image.jpg
     - Макеты стали намного подробнее.
     - Дополнительный слой информации передают дизайн-токены.
 - Появилась внутренняя документация.
+<<<<<<< HEAD
 - Пользователи получили UI kit.";s:7:"Summary";s:0:"";s:11:"FormatterID";s:7:"neasden";s:13:"OriginalAlias";s:6:"blazor";s:7:"Uploads";s:439:"a:11:{i:0;s:33:"/images/1x/maxim-petrov-photo.png";i:1;s:28:"/images/blog/1x/blazor-2.png";i:2;s:28:"/images/blog/1x/blazor-1.png";i:3;s:15:"empty-image.jpg";i:4;s:28:"/images/blog/1x/blazor-3.png";i:5;s:28:"/images/blog/1x/blazor-4.png";i:6;s:28:"/images/blog/1x/blazor-5.png";i:7;s:27:"/images/blog/1x/blazor6.png";i:8;s:28:"/images/blog/1x/blazor-6.png";i:9;s:28:"/images/blog/1x/blazor-7.png";i:10;s:28:"/images/blog/1x/blazor-8.png";}";s:11:"IsPublished";s:1:"1";s:13:"IsCommentable";s:1:"0";s:9:"IsVisible";s:1:"1";s:11:"IsFavourite";s:1:"1";s:5:"Stamp";s:10:"1711384202";s:12:"LastModified";s:10:"1711827676";s:6:"Offset";s:5:"14400";s:5:"IsDST";s:1:"0";s:9:"IsIndexed";s:1:"1";s:10:"IsExternal";s:1:"0";s:9:"ReadCount";s:3:"242";s:8:"SourceID";s:1:"0";s:12:"SourceNoteID";s:1:"0";s:13:"SourceNoteURL";s:0:"";s:17:"SourceNoteJSONURL";s:0:"";s:14:"SourceNoteData";s:0:"";s:8:"EntityID";s:1:"5";s:18:"AggregateReadCount";s:2:"15";}i:1;a:26:{s:2:"ID";s:1:"4";s:8:"SubsetID";s:1:"1";s:5:"Title";s:13:"Documentation";s:4:"Text";s:7054:"DevExpress Documentation — одна из самый объемных документации на рынке. Содержит несколько сотен тысяч статей и АПИ. Внутри для её работы создана целая экосистема, включающая в себя множество отдельных компонентов.
 
 empty-image.jpg
@@ -209,6 +210,9 @@ empty-image.jpg
 
 empty-image.jpg
 <img src="/images/blog/1x/docs-4.png" srcset="/images/blog/1x/docs-4.png 1x, /images/blog/2x/docs-4@2x.png 2x" class="img-fluid">";s:7:"Summary";s:0:"";s:11:"FormatterID";s:7:"neasden";s:13:"OriginalAlias";s:13:"documentation";s:7:"Uploads";s:185:"a:5:{i:0;s:26:"/images/blog/1x/docs-1.png";i:1;s:15:"empty-image.jpg";i:3;s:26:"/images/blog/1x/docs-2.png";i:4;s:26:"/images/blog/1x/docs-3.png";i:5;s:26:"/images/blog/1x/docs-4.png";}";s:11:"IsPublished";s:1:"1";s:13:"IsCommentable";s:1:"0";s:9:"IsVisible";s:1:"1";s:11:"IsFavourite";s:1:"1";s:5:"Stamp";s:10:"1711383886";s:12:"LastModified";s:10:"1711906616";s:6:"Offset";s:5:"14400";s:5:"IsDST";s:1:"0";s:9:"IsIndexed";s:1:"1";s:10:"IsExternal";s:1:"0";s:9:"ReadCount";s:2:"84";s:8:"SourceID";s:1:"0";s:12:"SourceNoteID";s:1:"0";s:13:"SourceNoteURL";s:0:"";s:17:"SourceNoteJSONURL";s:0:"";s:14:"SourceNoteData";s:0:"";s:8:"EntityID";s:1:"4";s:18:"AggregateReadCount";s:2:"11";}i:2;a:26:{s:2:"ID";s:1:"1";s:8:"SubsetID";s:1:"1";s:5:"Title";s:14:"Support Center";s:4:"Text";s:18768:"Система поддержки пользователей. Включает различные информационные ресурсы: вопросы от пользователей, статьи в базе знаний и истории версий.
+=======
+- Пользователи получили UI kit.";s:7:"Summary";s:0:"";s:11:"FormatterID";s:7:"neasden";s:13:"OriginalAlias";s:6:"blazor";s:7:"Uploads";s:439:"a:11:{i:0;s:33:"/images/1x/maxim-petrov-photo.png";i:1;s:28:"/images/blog/1x/blazor-2.png";i:2;s:28:"/images/blog/1x/blazor-1.png";i:3;s:15:"empty-image.jpg";i:4;s:28:"/images/blog/1x/blazor-3.png";i:5;s:28:"/images/blog/1x/blazor-4.png";i:6;s:28:"/images/blog/1x/blazor-5.png";i:7;s:27:"/images/blog/1x/blazor6.png";i:8;s:28:"/images/blog/1x/blazor-6.png";i:9;s:28:"/images/blog/1x/blazor-7.png";i:10;s:28:"/images/blog/1x/blazor-8.png";}";s:11:"IsPublished";s:1:"1";s:13:"IsCommentable";s:1:"0";s:9:"IsVisible";s:1:"1";s:11:"IsFavourite";s:1:"1";s:5:"Stamp";s:10:"1711384202";s:12:"LastModified";s:10:"1711827676";s:6:"Offset";s:5:"14400";s:5:"IsDST";s:1:"0";s:9:"IsIndexed";s:1:"1";s:10:"IsExternal";s:1:"0";s:9:"ReadCount";s:2:"21";s:8:"SourceID";s:1:"0";s:12:"SourceNoteID";s:1:"0";s:13:"SourceNoteURL";s:0:"";s:17:"SourceNoteJSONURL";s:0:"";s:14:"SourceNoteData";s:0:"";s:8:"EntityID";s:1:"5";s:18:"AggregateReadCount";s:2:"21";}i:1;a:26:{s:2:"ID";s:1:"1";s:8:"SubsetID";s:1:"1";s:5:"Title";s:14:"Support Center";s:4:"Text";s:18768:"Система поддержки пользователей. Включает различные информационные ресурсы: вопросы от пользователей, статьи в базе знаний и истории версий.
+>>>>>>> origin/main
 
 Ежедневно в Support Center создаются сотни новых вопросов и на них отвечают десятки саппорт-инженеров. За годы работы старый интерфейс устарел как внешне, так и с точки зрения удобства и функциональности. Пришла задача полностью переработать платформу, с учётом всех бизнес-требований.
 
@@ -325,7 +329,64 @@ empty-image.jpg
     - Были докручены мета-теги, чтобы тикеты лучше искались поисковиками.
     - Переосмыслены фильтры, добавлены готовые пресеты и возможность подписаться на созданный фильтр.
     - Оптимизирована внутренняя страница поиска.
+<<<<<<< HEAD
 - **Сделана мобильная версия клиентского портала.**";s:7:"Summary";s:0:"";s:11:"FormatterID";s:7:"neasden";s:13:"OriginalAlias";s:14:"support-center";s:7:"Uploads";s:213:"a:6:{i:0;s:24:"/images/blog/1x/sc-1.png";i:1;s:15:"empty-image.jpg";i:2;s:24:"/images/blog/1x/sc-2.png";i:3;s:24:"/images/blog/1x/sc-3.png";i:4;s:24:"/images/blog/1x/sc-4.png";i:5;s:24:"/images/blog/1x/sc-5.png";}";s:11:"IsPublished";s:1:"1";s:13:"IsCommentable";s:1:"0";s:9:"IsVisible";s:1:"1";s:11:"IsFavourite";s:1:"1";s:5:"Stamp";s:10:"1711383800";s:12:"LastModified";s:10:"1712003930";s:6:"Offset";s:5:"14400";s:5:"IsDST";s:1:"0";s:9:"IsIndexed";s:1:"1";s:10:"IsExternal";s:1:"0";s:9:"ReadCount";s:3:"142";s:8:"SourceID";s:1:"0";s:12:"SourceNoteID";s:1:"0";s:13:"SourceNoteURL";s:0:"";s:17:"SourceNoteJSONURL";s:0:"";s:14:"SourceNoteData";s:0:"";s:8:"EntityID";s:1:"1";s:18:"AggregateReadCount";s:1:"6";}i:3;a:26:{s:2:"ID";s:1:"6";s:8:"SubsetID";s:1:"1";s:5:"Title";s:3:"XAF";s:4:"Text";s:1537:"DevExpress XAF — это фреймворк для создания бизнес-приложений. С его помощью можно делать как десктоп, так веб-приложения. Помогает разработчикам сосредоточится на бизнес-логике, а не на деталях реализации интерфейса или архитектуры приложения.
+=======
+- **Сделана мобильная версия клиентского портала.**";s:7:"Summary";s:0:"";s:11:"FormatterID";s:7:"neasden";s:13:"OriginalAlias";s:14:"support-center";s:7:"Uploads";s:213:"a:6:{i:0;s:24:"/images/blog/1x/sc-1.png";i:1;s:15:"empty-image.jpg";i:2;s:24:"/images/blog/1x/sc-2.png";i:3;s:24:"/images/blog/1x/sc-3.png";i:4;s:24:"/images/blog/1x/sc-4.png";i:5;s:24:"/images/blog/1x/sc-5.png";}";s:11:"IsPublished";s:1:"1";s:13:"IsCommentable";s:1:"0";s:9:"IsVisible";s:1:"1";s:11:"IsFavourite";s:1:"1";s:5:"Stamp";s:10:"1711383800";s:12:"LastModified";s:10:"1712003930";s:6:"Offset";s:5:"14400";s:5:"IsDST";s:1:"0";s:9:"IsIndexed";s:1:"1";s:10:"IsExternal";s:1:"0";s:9:"ReadCount";s:2:"16";s:8:"SourceID";s:1:"0";s:12:"SourceNoteID";s:1:"0";s:13:"SourceNoteURL";s:0:"";s:17:"SourceNoteJSONURL";s:0:"";s:14:"SourceNoteData";s:0:"";s:8:"EntityID";s:1:"1";s:18:"AggregateReadCount";s:2:"16";}i:2;a:26:{s:2:"ID";s:1:"4";s:8:"SubsetID";s:1:"1";s:5:"Title";s:13:"Documentation";s:4:"Text";s:7054:"DevExpress Documentation — одна из самый объемных документации на рынке. Содержит несколько сотен тысяч статей и АПИ. Внутри для её работы создана целая экосистема, включающая в себя множество отдельных компонентов.
+
+empty-image.jpg
+<img src="/images/blog/1x/docs-1.png" srcset="/images/blog/1x/docs-1.png 1x, /images/blog/2x/docs-1@2x.png 2x" class="img-fluid">
+
+# Вводная
+
+Долгое время единой системы документации не было. Всё состояло из отдельных проектов и отдавалось пользователям в формате довольно простых HTML файлов, либо в CHM формате.
+
+С развитием продуктовой линейки и увеличение штата технических писателей такой подход стал приносить неудобства как для сотрудников, так и для пользователей.
+
+Учитывай количество и объем документов, было принято решение сделать собственную систему документации.
+
+# Задачи
+
+Система документации состоит из различных функциональных компонентов. При разработке дизайна нужно было учесть следующие факторы:
+
+- **Огромное количество написанных топиков.** Разные топики были написаны разными людьми, в разное время. Поэтому, сильно отличались по структуре. Нужно было найти такой подход к стилям, чтобы старые документы не ломали внешний вид страниц.
+- **Документацию читают с разных устройств.** Нужно было сделать документацию такой, чтобы её можно было читать на любом экране.
+- **Навигация по проекту должна быть удобной.** Структура каждого проекта документации древовидна, один проект может быть вложен в другой и так далее. Нужно сделать так, чтобы пользователь понимал, на каком уровне он находится и мог легко навигироваться между документами.
+- **Поиск по документу должен быть удобным.** Документы внутри проекта могут быть большими и сложными. Нужно сделать так, чтобы пользователь мог быстро найти ответ на свой вопрос внутри конкретного документа.
+- **Сделать разводящую страницу по проектам.** Новая система документации собирает все проекты в рамках одного сайта. Важно было сделать страницу, где пользователь может выбрать нужный ему проект.
+- **Содержимое документа может варьировать от версии продукта и его платформы.**
+- **Совместно с техническими писателями подготовить гайдлайны по оформлению топиков.**
+- **Учесть оффлайн документацию.** Часть пользователей, в свете специфики бизнеса, используют активно оффлайн версию документации. А именно, CHM. Поэтому, нужно было подготовить стили для оффлайн документации. Учитывая, что CHM поддерживает CSS уровня Internet Explorer 7 (и то не всегда) — это было очень непростой задачей.
+- **Поддержать интеграцию с саппорт-центром.** Сегмент пользователей читающих документацию и создающих тикеты в саппорт-центре тесно связан. Важно было найти такое решение, чтобы пользователь имел возможность создать тикет прямо из документации, если ему не понятен какой-то из топиков. И наоборот, если ссылку на топик дал сотрудник саппорт-центра, то нужно иметь возможность дополнительно уточнить у пользователя, помог ли ему этот топик.
+- **Сделать документацию доступной.** Сайт документации должен удовлетворять требования A11Y, чтобы им было удобно пользоваться всем пользователям.
+
+# Результат
+
+Новая система документации получила положительный фидбек как со стороны пользователей, так и со стороны технических писателей. Основная часть задач была решения в рамках основной работы над проектом, многие дополнительные фичи — в рамках доработок по проекту.
+
+Кроме работы непосредственно над дизайном, я внёс большой вклад во фронденд составляющую сайта:
+
+- Написал несколько функциональных фич.
+- Обновил семантику сайта, для решения проблем связанных с доступностью.
+- Активно работал со стилям в коде.
+
+## Примеры реализации
+
+### Разводящая страница
+
+empty-image.jpg
+<img src="/images/blog/1x/docs-2.png" srcset="/images/blog/1x/docs-2.png 1x, /images/blog/2x/docs-2@2x.png 2x" class="img-fluid">
+
+### Доступность со всех устройств
+
+empty-image.jpg
+<img src="/images/blog/1x/docs-3.png" srcset="/images/blog/1x/docs-3.png 1x, /images/blog/2x/docs-3@2x.png 2x" class="img-fluid">
+
+### Доступность
+
+empty-image.jpg
+<img src="/images/blog/1x/docs-4.png" srcset="/images/blog/1x/docs-4.png 1x, /images/blog/2x/docs-4@2x.png 2x" class="img-fluid">";s:7:"Summary";s:0:"";s:11:"FormatterID";s:7:"neasden";s:13:"OriginalAlias";s:13:"documentation";s:7:"Uploads";s:185:"a:5:{i:0;s:26:"/images/blog/1x/docs-1.png";i:1;s:15:"empty-image.jpg";i:3;s:26:"/images/blog/1x/docs-2.png";i:4;s:26:"/images/blog/1x/docs-3.png";i:5;s:26:"/images/blog/1x/docs-4.png";}";s:11:"IsPublished";s:1:"1";s:13:"IsCommentable";s:1:"0";s:9:"IsVisible";s:1:"1";s:11:"IsFavourite";s:1:"1";s:5:"Stamp";s:10:"1711383886";s:12:"LastModified";s:10:"1711906616";s:6:"Offset";s:5:"14400";s:5:"IsDST";s:1:"0";s:9:"IsIndexed";s:1:"1";s:10:"IsExternal";s:1:"0";s:9:"ReadCount";s:2:"10";s:8:"SourceID";s:1:"0";s:12:"SourceNoteID";s:1:"0";s:13:"SourceNoteURL";s:0:"";s:17:"SourceNoteJSONURL";s:0:"";s:14:"SourceNoteData";s:0:"";s:8:"EntityID";s:1:"4";s:18:"AggregateReadCount";s:2:"10";}i:3;a:26:{s:2:"ID";s:1:"6";s:8:"SubsetID";s:1:"1";s:5:"Title";s:3:"XAF";s:4:"Text";s:1537:"DevExpress XAF — это фреймворк для создания бизнес-приложений. С его помощью можно делать как десктоп, так веб-приложения. Помогает разработчикам сосредоточится на бизнес-логике, а не на деталях реализации интерфейса или архитектуры приложения.
+>>>>>>> origin/main
 
 Со своей стороны, занимался проектированием, развитием и поддержкой UX/UI приложения в связке с ПМом. Разработкой новых фич, улучшение существующих, работой с обратной связью от пользователей.
 
@@ -349,4 +410,8 @@ empty-image.jpg
 # Пак иконок
 
 empty-image.jpg
+<<<<<<< HEAD
 <img src="/images/blog/1x/xaf-1.png" srcset="/images/blog/1x/xaf-1.png 1x, /images/blog/2x/xaf-1@2x.png 2x" class="img-fluid">";s:7:"Summary";s:0:"";s:11:"FormatterID";s:7:"neasden";s:13:"OriginalAlias";s:3:"xaf";s:7:"Uploads";s:181:"a:5:{i:0;s:25:"/images/blog/1x/xaf-1.png";i:1;s:15:"empty-image.jpg";i:2;s:25:"/images/blog/1x/xaf-2.png";i:4;s:25:"/images/blog/1x/xaf-3.png";i:5;s:25:"/images/blog/1x/xaf-4.png";}";s:11:"IsPublished";s:1:"1";s:13:"IsCommentable";s:1:"0";s:9:"IsVisible";s:1:"1";s:11:"IsFavourite";s:1:"1";s:5:"Stamp";s:10:"1711383936";s:12:"LastModified";s:10:"1711911199";s:6:"Offset";s:5:"14400";s:5:"IsDST";s:1:"0";s:9:"IsIndexed";s:1:"1";s:10:"IsExternal";s:1:"0";s:9:"ReadCount";s:2:"86";s:8:"SourceID";s:1:"0";s:12:"SourceNoteID";s:1:"0";s:13:"SourceNoteURL";s:0:"";s:17:"SourceNoteJSONURL";s:0:"";s:14:"SourceNoteData";s:0:"";s:8:"EntityID";s:1:"6";s:18:"AggregateReadCount";s:1:"2";}}}
+=======
+<img src="/images/blog/1x/xaf-1.png" srcset="/images/blog/1x/xaf-1.png 1x, /images/blog/2x/xaf-1@2x.png 2x" class="img-fluid">";s:7:"Summary";s:0:"";s:11:"FormatterID";s:7:"neasden";s:13:"OriginalAlias";s:3:"xaf";s:7:"Uploads";s:181:"a:5:{i:0;s:25:"/images/blog/1x/xaf-1.png";i:1;s:15:"empty-image.jpg";i:2;s:25:"/images/blog/1x/xaf-2.png";i:4;s:25:"/images/blog/1x/xaf-3.png";i:5;s:25:"/images/blog/1x/xaf-4.png";}";s:11:"IsPublished";s:1:"1";s:13:"IsCommentable";s:1:"0";s:9:"IsVisible";s:1:"1";s:11:"IsFavourite";s:1:"1";s:5:"Stamp";s:10:"1711383936";s:12:"LastModified";s:10:"1711911199";s:6:"Offset";s:5:"14400";s:5:"IsDST";s:1:"0";s:9:"IsIndexed";s:1:"1";s:10:"IsExternal";s:1:"0";s:9:"ReadCount";s:1:"9";s:8:"SourceID";s:1:"0";s:12:"SourceNoteID";s:1:"0";s:13:"SourceNoteURL";s:0:"";s:17:"SourceNoteJSONURL";s:0:"";s:14:"SourceNoteData";s:0:"";s:8:"EntityID";s:1:"6";s:18:"AggregateReadCount";s:1:"9";}}}
+>>>>>>> origin/main

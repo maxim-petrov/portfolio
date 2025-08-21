@@ -853,6 +853,7 @@ UPDATE LOW_PRIORITY `e2BlogNotes` SET `ReadCount` = `ReadCount` + 1 WHERE `ID` =
 INSERT LOW_PRIORITY INTO `e2BlogActions` (`SubsetID`, `EntityID`, `Stamp`, `ReadCount`) VALUES (1, '1', '1713160800', '1') ON DUPLICATE KEY UPDATE `ReadCount` = `ReadCount` + 1;
 
 DELETE LOW_PRIORITY FROM `e2BlogActions` WHERE (`Stamp` < 1710570943);
+<<<<<<< HEAD
 
 UPDATE LOW_PRIORITY `e2BlogNotes` SET `ReadCount` = `ReadCount` + 1 WHERE `ID` = 1;
 
@@ -4405,4 +4406,6 @@ UPDATE LOW_PRIORITY `e2BlogNotes` SET `ReadCount` = `ReadCount` + 1 WHERE `ID` =
 INSERT LOW_PRIORITY INTO `e2BlogActions` (`SubsetID`, `EntityID`, `Stamp`, `ReadCount`) VALUES (1, '5', '1755705600', '1') ON DUPLICATE KEY UPDATE `ReadCount` = `ReadCount` + 1;
 
 DELETE LOW_PRIORITY FROM `e2BlogActions` WHERE (`Stamp` < 1753115115);
+=======
+>>>>>>> origin/main
 
