@@ -17,7 +17,7 @@
 // Option 1
 //
 // Import all of Bootstrap's CSS
-@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100..900&display=swap');
+// Font is now loaded via HTML <link> tag for better performance
 
 // @import "bootstrap/scss/bootstrap";
 
@@ -61,7 +61,7 @@ $success: #7952b3;
 @import "bootstrap/scss/dropdown";
 @import "bootstrap/scss/button-group";
 @import "bootstrap/scss/nav";
-@import "bootstrap/scss/navbar"; // Requires nav
+@import "bootstrap/scss/navbar";
 @import "bootstrap/scss/card";
 @import "bootstrap/scss/breadcrumb";
 @import "bootstrap/scss/accordion";
@@ -72,12 +72,12 @@ $success: #7952b3;
 @import "bootstrap/scss/list-group";
 @import "bootstrap/scss/close";
 @import "bootstrap/scss/toasts";
-@import "bootstrap/scss/modal"; // Requires transitions
+@import "bootstrap/scss/modal";
 @import "bootstrap/scss/tooltip";
 @import "bootstrap/scss/popover";
 @import "bootstrap/scss/carousel";
 @import "bootstrap/scss/spinners";
-@import "bootstrap/scss/offcanvas"; // Requires transitions
+@import "bootstrap/scss/offcanvas";
 @import "bootstrap/scss/placeholders";
 
 // Helpers
@@ -649,7 +649,6 @@ p {
   margin-top: -6px;
 }
 
-// User avatar in navbar
 .userpic {
   &.emerge {
     opacity: 1;
@@ -661,7 +660,6 @@ p {
   }
 }
 
-// Navbar photo link
 .navbar__photo {
   border-bottom: none !important;
 }
